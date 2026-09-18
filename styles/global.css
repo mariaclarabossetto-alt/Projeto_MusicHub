@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --azul-escuro: #060E2E;
+  --roxo: #A861C4;
+  --azul: #4AB1DF;
+  --roxo-claro: #DDD7F9;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza: #727293;
+
+/*colocar os itens reultilizaveis aqui depois*/
