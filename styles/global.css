@@ -1,8 +1,8 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -21,88 +21,88 @@
 
 .cabecalho-superior {
 
-    background: var(--roxo);
-    color: var(--roxo-claro);
-    border-radius: 0 0 20px 20px;
-    font-size: 20px;
+  background: var(--roxo);
+  color: var(--roxo-claro);
+  border-radius: 0 0 20px 20px;
+  font-size: 20px;
 
-    padding: 20px 30px;
-    width: 100vw;
-    height: 10vh;
+  padding: 20px 30px;
+  width: 100vw;
+  height: 10vh;
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
 .cabecalho-superior .cabecalho-cont {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
 }
 
 .cabecalho-superior .cabecalho-cont i {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .cabecalho-superior .cabecalho-cont .campo-busca p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .cabecalho-superior .cabecalho-cont .campo-busca {
-    height: 45px;
-    width: 720px;
+  height: 45px;
+  width: 720px;
 
-    background-color: var(--roxo-claro);
-    color: var(--preto);
+  background-color: var(--roxo-claro);
+  color: var(--preto);
 
-    padding: 10px;
+  padding: 10px;
 
-    border-radius: 30px;
+  border-radius: 30px;
 
 
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .cabecalho-superior .cabecalho-cont .campo-busca i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .cabecalho-superior .cabecalho-cont .campo-busca input {
-    border: none;
-    outline: none;
-    background: transparent;
-    caret-color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  caret-color: transparent;
 }
 
 /* cabecalho inferior */
 
 .cabecalho-inferior {
-    background: var(--roxo);
-    color: var(--roxo-claro);
-    border-radius: 20px 20px 0 0;
-    font-size: 20px;
+  background: var(--roxo);
+  color: var(--roxo-claro);
+  border-radius: 20px 20px 0 0;
+  font-size: 20px;
 
-    padding: 20px 30px;
-    width: 100vw;
-    height: 10vh;
+  padding: 20px 30px;
+  width: 100vw;
+  height: 10vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.cabecalho-inferior .inferior-cont{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
+.cabecalho-inferior .inferior-cont {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
 }
 
 .cabecalho-inferior i {
-    font-size: 30px;;
+  font-size: 30px;
 }
