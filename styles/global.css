@@ -48,9 +48,7 @@
   font-size: 40px;
 }
 
-.cabecalho-superior .cabecalho-cont .campo-busca p {
-  font-size: 20px;
-}
+
 
 .cabecalho-superior .cabecalho-cont .campo-busca {
   height: 45px;
@@ -67,6 +65,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
+  box-shadow: 0 4px 12px #0000005f;
+}
+
+.cabecalho-superior .cabecalho-cont .campo-busca p {
+  font-size: 20px;
 }
 
 .cabecalho-superior .cabecalho-cont .campo-busca i {
