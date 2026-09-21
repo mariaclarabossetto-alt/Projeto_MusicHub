@@ -1,0 +1,115 @@
+body {
+    background-image: url(../Imagens/Bolinhas.svg);
+    background-position: center;
+    background-size: 100% 130%;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+.campo {
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+}
+
+label,
+.campo {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.barra-senha {
+    position: relative;
+
+}
+
+.olho {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 320px;
+}
+
+.entrar {
+    margin-top: 60px;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 85%;
+    padding: 10px 16px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor-branco);
+    background-color: var(--cor-destaque);
+}
+
+.sem-conta{
+    border-radius: 10px;
+    font-size: 0.7em;
+    color: var(--cor-branco);
+}
+
+.outras-formas{
+    align-items: center;
+    margin-top: 30px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.forma{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 5px;
+    padding: 10px 16px;
+    border: none;
+    font-size: 0.7em;
+    color: black;
+    margin: 10px;
+    background-color: var(--cor-texto);
+}
+
+.forma img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+a {
+    color: var(--cor-texto);
+    font-size: 0.5em;
+    align-items: center;
+}
