@@ -1,0 +1,360 @@
+/*MAIN*/
+
+.pagina-podcast {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+.pagina-podcast__titulo {
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+    margin: 0;
+}
+
+.formulario-podcast .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formulario-podcast .campo label {
+    font-weight: var(--peso-negrito);
+}
+
+.formulario-podcast .campo input,
+.formulario-podcast .campo textarea,
+.formulario-podcast .campo select {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-campo);
+    background-color: transparent;
+    font: inherit;
+    color: var(--cor-texto);
+}
+
+.formulario-podcast .campo select option {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.formulario-podcast .campo input::placeholder,
+.formulario-podcast .campo textarea::placeholder {
+    color: var(--cor-texto);
+    opacity: 1;
+}
+
+.formulario-podcast .campo input:focus-visible,
+.formulario-podcast .campo textarea:focus-visible,
+.formulario-podcast .campo select:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
+
+.formulario-podcast {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.formulario-podcast .campo textarea {
+    resize: vertical;
+}
+
+.campo__ajuda {
+    align-self: flex-end;
+    font-size: var(--fonte-pequena);
+}
+
+.capa-podcast__titulo {
+    margin-bottom: 16px;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+}
+
+.capa-podcast__seletor {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+}
+
+.capa-podcast__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 250px;
+    padding: 24px;
+    border: 2px dashed var(--cor-borda);
+    border-radius: var(--raio-campo);
+    text-align: center;
+    cursor: pointer;
+}
+
+.capa-podcast__area img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.capa-podcast__chamada {
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+}
+
+.capa-podcast__arquivo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.capa-podcast__arquivo:focus-visible+.capa-podcast__area {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 4px;
+}
+
+.capa-podcast__area:hover {
+    border-color: var(--cor-destaque);
+}
+
+.formulario-podcast__topo {
+    display: grid;
+    grid-template-columns: minmax(0, 390px) minmax(0, 1fr);
+    align-items: start;
+    gap: 64px;
+}
+
+.formulario-podcast__dados {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+.audio-podcast {
+    width: 100%;
+}
+
+.audio-podcast__seletor {
+    position: relative;
+}
+
+.audio-podcast__area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 80px;
+    padding: 12px 20px;
+    border: 2px dashed var(--cor-borda);
+    border-radius: var(--raio-campo);
+    cursor: pointer;
+}
+
+.audio-podcast__area img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.audio-podcast__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+
+    text-align: center;
+    font-size: var(--fonte-pequena);
+}
+
+.audio-podcast__chamada {
+    font-weight: var(--peso-negrito);
+}
+
+.audio-podcast__arquivo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.audio-podcast__arquivo:focus-visible+.audio-podcast__area {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 4px;
+}
+
+.audio-podcast__area:hover {
+    border-color: var(--cor-destaque);
+}
+
+.audio-podcast__titulo {
+    margin-bottom: 8px;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+    color: var(--cor-texto);
+}
+
+.formulario-podcast__inferior {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 64px;
+    margin-top: 32px;
+}
+
+.formulario-podcast__coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+}
+
+.formulario-podcast__numeracao {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.formulario-podcast__numeracao .campo {
+    min-width: 0;
+}
+
+.formulario-podcast__acoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.botao-podcast {
+    width: 285px;
+    max-width: 100%;
+    min-height: 52px;
+    padding: 12px 24px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: var(--raio-campo);
+    font: inherit;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botao-podcast--descartar {
+    background-color: transparent;
+    color: var(--cor-destaque);
+}
+
+.botao-podcast--salvar {
+    background-color: var(--cor-destaque);
+    color: #fff;
+}
+
+.botao-podcast:hover {
+    filter: brightness(1.1);
+}
+
+.botao-podcast:focus-visible {
+    outline: 2px solid var(--cor-texto);
+    outline-offset: 4px;
+}
+
+.pagina-podcast__cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.pagina-podcast__voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.pagina-podcast__voltar:hover {
+    color: var(--cor-destaque);
+}
+
+.pagina-podcast__voltar:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 4px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    .formulario-podcast__topo {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .formulario-podcast__inferior {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pagina-podcast {
+        padding: 24px 16px;
+    }
+
+    .formulario-podcast__numeracao {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .formulario-podcast__acoes {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .botao-podcast {
+        width: 100%;
+    }
+
+    .pagina-podcast__cabecalho {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 801px) {
+    .formulario-podcast__inferior {
+        grid-template-rows: auto auto;
+        column-gap: 64px;
+        row-gap: 16px;
+    }
+
+    .formulario-podcast__coluna {
+        display: grid;
+        grid-row: span 2;
+        grid-template-rows: subgrid;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .formulario-podcast__dados {
+        padding-top: calc(var(--fonte-subtitulo) * var(--altura-linha) + 16px);
+    }
+}
