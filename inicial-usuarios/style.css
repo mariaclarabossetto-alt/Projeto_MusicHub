@@ -3,73 +3,149 @@ body {
 }
 
 main {
+    height: auto;
+
     display: grid;
-    grid-template-columns: auto 300px;
-    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr;
+
+}
+
+
+.primario {
+    margin: 10vh 0;
+    padding: 40px;
+    color: var(--roxo-claro);
+
+    grid-row: 1/5;
+
     z-index: 1;
 
+    overflow-x: scroll;
 }
 
-aside {
+.caroussel {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    gap: 30px;
+
     overflow: scroll;
-    padding: 20px 40px;
-    margin: 1vh 0;
+}
+
+.caroussel-musicas {
+    grid-row: 1/2;
+}
+
+.caroussel::-webkit-scrollbar {
+    height: 6px;
+
+}
+
+.caroussel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.caroussel::-webkit-scrollbar-thumb {
+    background: var(--roxo-claro);
+    border-radius: 10px;
+}
+
+.caroussel-artistas {
+    grid-row: 2/3;
+}
+
+.caroussel-podcasts {
+    grid-row: 3/4;
+}
+
+.capas.redondas img {
+    border-radius: 100px;
+}
+
+.capas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.capas img {
+    height: 170px;
+    width: 170px;
+
+    border-radius: 5px;
+}
+
+.music-player-lateral {
     height: 78vh;
+    width: 300px;
+
+    padding: 20px 40px;
+
+    color: var(--roxo-claro);
     background-color: var(--roxo);
     border-radius: 20px;
+
+    position: fixed;
+    right: 0;
+    transform: translateY(+14%);
     z-index: 2;
-    color: var(--roxo-claro);
+
+    overflow: hidden;
 }
 
-aside .icones-player {
+.music-player-lateral .icones-player {
     font-size: 20px;
+
     display: flex;
     justify-content: space-between;
 }
 
-aside img {
+.music-player-lateral img {
     height: auto;
     width: 220px;
+
     border-radius: 5px;
 }
 
-aside .sub-cover {
+.music-player-lateral .sub-cover {
     margin: 10px 0;
+
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-aside .sub-cover .textos-player {
+.music-player-lateral .sub-cover .textos-player {
     display: flex;
     flex-direction: column;
-
 }
 
-aside .sub-cover .icones-player {
+.music-player-lateral .sub-cover .icones-player {
     font-size: 20px;
+
     display: flex;
     gap: 5px;
 }
 
-aside .controles-player {
+.music-player-lateral .controles-player {
     margin-top: 20px;
     font-size: 30px;
+
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-aside .letras-player {
-    min-height: 50px;
-    max-height: 100px;
-    margin-top: 15px;
-    padding: 10px;
+.music-player-lateral .letras-player {
+    background-color: var(--roxo-claro);
     color: var(--cinza);
     border-radius: 20px;
 
+    margin: 15px 0;
+    padding: 10px;
 
-    width: auto;
+    height: 40%;
     overflow: scroll;
-    background-color: var(--roxo-claro);
 }
