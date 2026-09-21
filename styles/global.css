@@ -35,6 +35,8 @@
   align-items: center;
   justify-content: space-between;
 
+  position: fixed;
+  z-index: 3;
 }
 
 .cabecalho-superior .cabecalho-cont {
@@ -99,6 +101,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
 }
 
 .cabecalho-inferior .inferior-cont {
@@ -109,4 +115,10 @@
 
 .cabecalho-inferior i {
   font-size: 30px;
+}
+
+.item-ativo {
+  padding: 5px 3px;
+  border-radius: 20px;
+  background-color: var(--azul);
 }
