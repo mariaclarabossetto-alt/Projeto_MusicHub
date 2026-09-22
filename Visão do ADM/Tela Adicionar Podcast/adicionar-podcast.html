@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar podcast | MusicHub</title>
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="adicionar-podcast-style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+
+            <button class="cabecalho__buscar" type="submit">
+                Buscar
+            </button>
+        </form>
+
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+    <main class="pagina-podcast">
+        <div class="pagina-podcast__cabecalho">
+            <a class="pagina-podcast__voltar" href="#" aria-label="Voltar para a lista de podcasts">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="m14 5-7 7 7 7" />
+                </svg>
+            </a>
+            <h1 class="pagina-podcast__titulo">Adicionar podcast</h1>
+        </div>
+        <form class="formulario-podcast">
+            <div class="formulario-podcast__topo">
+                <div class="capa-podcast">
+                    <p class="capa-podcast__titulo">Capa do podcast</p>
+                    <div class="capa-podcast__seletor">
+                        <input type="file" class="capa-podcast__arquivo" id="capa-podcast" name="capa" accept="image/*"
+                            aria-describedby="ajuda-capa">
+                        <label for="capa-podcast" class="capa-podcast__area">
+                            <img src="../../Imagens/Icone_adic_imagem.svg" alt="">
+                            <span class="capa-podcast__chamada">Adicionar imagem</span>
+                            <span id="ajuda-capa" class="ajuda-capa">Clique para selecionar a foto do seu podcast</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="formulario-podcast__dados">
+                    <div class="campo">
+                        <label for="nome-podcast">Nome do podcast</label>
+                        <input type="text" id="nome-podcast" name="nome" placeholder="Adicione o nome do seu podcast"
+                            required>
+                    </div>
+                    <div class="campo">
+                        <label for="descricao-podcast">Descrição:</label>
+                        <textarea name="descricao" id="descricao-podcast" aria-describedby="ajuda-descricao"
+                            placeholder="Adicione uma descrição para seu podcast." rows="4" maxlength="70"></textarea>
+                        <small class="campo__ajuda" id="ajuda-descricao">Máximo de 70 caracteres</small>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario-podcast__inferior">
+                <div class="formulario-podcast__coluna">
+                    <div class="audio-podcast">
+                        <p class="audio-podcast__titulo">Áudio:</p>
+                        <div class="audio-podcast__seletor">
+                            <input type="file" class="audio-podcast__arquivo" id="audio-podcast" name="audio"
+                                accept="audio/*" aria-describedby="ajuda-audio">
+                            <label for="audio-podcast" class="audio-podcast__area">
+                                <img src="../../Imagens/Icone_adic_audio_microfone.svg" alt="">
+                                <span class="audio-podcast__textos">
+                                    <span class="audio-podcast__chamada">Adicionar áudio</span>
+                                    <span id="ajuda-audio">Clique para adicionar o áudio do seu podcast.</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria-podcast">Categoria:</label>
+                        <select id="categoria-podcast" name="categoria">
+                            <option value="" selected disabled>
+                                Selecione a categoria
+                            </option>
+                            <option value="tecnologia">Tecnologia</option>
+                            <option value="musica">Música</option>
+                            <option value="educacao">Educação</option>
+                            <option value="entretenimento">Entretenimento</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formulario-podcast__coluna">
+                    <div class="campo">
+                        <label for="apresentador-podcast">Apresentador:</label>
+                        <input id="apresentador-podcast" name="apresentador" type="text"
+                            placeholder="Nome do apresentador">
+                    </div>
+                    <div class="formulario-podcast__numeracao">
+                        <div class="campo">
+                            <label for="episodio-podcast">Episódio:</label>
+                            <input id="episodio-podcast" name="episodio" type="number" min="1" step="1"
+                                placeholder="Ex.: 1">
+                        </div>
+                        <div class="campo">
+                            <label for="temporada-podcast">Temporada:</label>
+                            <input id="temporada-podcast" name="temporada" type="number" min="1" step="1"
+                                placeholder="Ex.: 1" aria-describedby="ajuda-temporada">
+                            <small id="ajuda-temporada" class="campo__ajuda">Não obrigatório</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario-podcast__acoes">
+                <button type="reset" class="botao-podcast botao-podcast--descartar">
+                    Descartar
+                </button>
+                <button type="submit" class="botao-podcast botao-podcast--salvar">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="#">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Musica/adicionar-musica.html">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Album/adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="adicionar-podcast.html" aria-current="page">
+                                        Adicionar Podcast
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
