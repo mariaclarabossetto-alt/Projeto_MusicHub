@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Música | MusicHub</title>
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="adicionar-musica-style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+            <button class="cabecalho__buscar" type="submit">Buscar</button>
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+    <main class="musica">
+        <div class="musica__cabecalho">
+            <a class="musica__voltar" href="#" aria-label="Voltar para a lista de músicas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="m14 5-7 7 7 7" />
+                </svg>
+            </a>
+            <h1 class="musica__titulo">Adicionar Música</h1>
+        </div>
+        <form class="musica__formulario" method="post" enctype="multipart/form-data">
+            <div class="musica__campos">
+                <div class="musica__campo">
+                    <label for="titulo-musica">Título da Musica</label>
+                    <input type="text" id="titulo-musica" name="titulo" placeholder="Ex.: Aquarela" required>
+                </div>
+                <div class="musica__campo">
+                    <label for="versao-musica">Versão</label>
+                    <input type="text" id="versao-musica" name="versao" placeholder="Ex.: Ao Vivo ou Remix" required>
+                </div>
+                <div class="musica__campo">
+                    <label for="artista-principal">Artista Principal</label>
+                    <select name="artista_principal" id="artista-principal">
+                        <option value="" disabled selected>Selecione o perfil do artista primário</option>
+                        <option>Artista de exemplo 1</option>
+                        <option>Artista de exemplo 2</option>
+                        <option>Artista de exemplo 3</option>
+                    </select>
+                </div>
+                <div class="musica__campo">
+                    <label for="artistas-participantes">Artistas Participantes</label>
+                    <input type="text" id="artistas-participantes" name="artistas-participantes"
+                        placeholder="Ex.: João Bosco, Ana Castela">
+                </div>
+                <div class="musica__campo">
+                    <label for="album-musica">Álbum / EP</label>
+                    <select name="album" id="album-musica">
+                        <option value="" disabled selected>Selecione álbum ou opção Single</option>
+                        <option>Single Music</option>
+                        <option>Álbum de exemplo 2</option>
+                        <option>Álbum de exemplo 3</option>
+                    </select>
+                </div>
+                <div class="musica__campo">
+                    <label for="genero-musica">Gênero</label>
+                    <input type="text" id="genero-musica" name="genero" placeholder="Ex.: MPB">
+                </div>
+                <div class="musica__campo">
+                    <label for="compositores-musica">Compositor(es) / Letrista(s)</label>
+                    <input type="text" id="compositores-musica" name="compositores" placeholder="Ex.: Toquinho">
+                </div>
+                <div class="musica__campo">
+                    <label for="produtores-musica">Produtor(es)</label>
+                    <input type="text" id="produtores-musica" name="produtores" placeholder="Ex.: Toquinho">
+                </div>
+                <div class="musica__campo">
+                    <label for="gravadora-musica">Selo / Gravadora</label>
+                    <input type="text" id="gravadora-musica" name="gravadora" placeholder="Ex.: MGM MUSIC"
+                        aria-describedby="gravadora-ajuda">
+                    <small class="musica__ajuda" id="gravadora-ajuda">Não obrigatório</small>
+                </div>
+                <div class="musica__campo">
+                    <label for="lancamento-musica">Data e Hora de Lançamento</label>
+                    <input type="datetime-local" id="lancamento-musica" name="lancamento">
+                </div>
+                <div class="musica__campo">
+                    <label for="visibilidade-musica">Visibilidade</label>
+                    <select name="visibilidade" id="visibilidade-musica">
+                        <option value="" disabled selected>Selecione o status da faixa</option>
+                        <option>Pública</option>
+                        <option>Privada</option>
+                    </select>
+                </div>
+                <div class="musica__campo musica__campo--explicito">
+                    <label for="conteudo-explicito" class="musica__alternador">
+                        <span>Conteúdo Explícito</span>
+                        <input type="checkbox" class="musica__checkbox" id="conteudo-explicito"
+                            name="conteudo_explicito" valeue="sim">
+                        <span class="musica__interruptor" aria-hidden="true"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="musica__arquivo">
+                <label for="arquivo-audio" class="musica__arquivo-titulo">Arquivo de Áudio:</label>
+                <div class="musica__upload">
+                    <input type="file" class="musica__upload-input" id="arquivo-audio" name="arquivo_audio"
+                        accept="audio/*" aria-describedby="audio-ajuda" required>
+                    <label for="arquivo-audio" class="musica__upload-area">
+                        <svg class="musica__upload-icone" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="2" width="6" height="12" rx="3" />
+                            <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
+                            <path d="M12 19v3" />
+                            <path d="M8 22h8" />
+                        </svg>
+                        <span class="musica__upload-textos">
+                            <strong>Adicionar áudio</strong>
+                            <span id="audio-ajuda">Clique para adicionar o áudio da sua música</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="musica__acoes">
+                <button class="musica__botao musica__botao--descartar" type="reset">Descartar</button>
+                <button class="musica__botao musica__botao--salvar" type="submit">Salvar</button>
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="#">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="adicionar-musica.html" aria-current="page">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Album/adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Podcast/adicionar-podcast.html">
+                                        Adicionar Podcast
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
