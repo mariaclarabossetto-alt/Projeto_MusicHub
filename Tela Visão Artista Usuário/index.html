@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Global/global-style.css">
     <link rel="shortcut icon" href="../Imagens/logo_musichub.svg" type="image/x-icon">
+    <!-- TIRAR DEPOIS NO MERGE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -15,94 +21,133 @@
 
     <!-- CABEÇALHO -->
 
+    <header class="cabecalho-superior">
+        <div class="cabecalho-cont">
+            <i class="fa-regular fa-house"></i>
+            <div class="campo-busca">
+                <i class="fa fa-magnifying-glass"></i>
+                <input type="text" placeholder="Algo na sua mente?">
+            </div>
+            <i class="fa fa-sliders"></i>
+        </div>
+        <p class="item-ativo">LOGIN</p>
+    </header>
+
     <main>
+
         <section class="musicas-albuns">
 
+            <div class="card">
 
-            <img class="imagem-artista" src="../Imagens/Imagem_artista.svg" alt="">
-
-            <h1>Urias</h1>
-
-            <div>
-
-                <h2>Músicas mais ouvidas</h2>
-
-                <article class="carrosel">
-
-                    <div class="parte-carrosel">
-
-                        <img src="../Imagens/Album_carranca.svg" alt="">
-                        <h3>Voz do Brasil</h3>
-                        <p>Urias</p>
-
-                    </div>
-
-                    <div class="parte-carrosel">
-
-                        <img src="../Imagens/Album_furia.svg" alt="">
-                        <h3>Foi Mal</h3>
-                        <p>Urias</p>
-
-                    </div>
-
-                    <div class="parte-carrosel">
-
-                        <img src="../Imagens/Album_furia.svg" alt="">
-                        <h3>Tanto Faz</h3>
-                        <p>Urias</p>
-
-                    </div>
-
-                    <div class="parte-carrosel">
-
-                        <img src="../Imagens/Album_carranca.svg" alt="">
-                        <h3>Deus</h3>
-                        <p>Urias</p>
-
-                    </div>
-
-                </article>
-
+                <img src="../Imagens/Imagem_artista.svg" alt="">
 
             </div>
 
-            <div>
+            <div class="coluna">
+
+                <h1>Urias</h1>
+
+                <div class="grupo-carrosel">
+
+                    <h2>Músicas mais ouvidas</h2>
+
+                    <article class="carrosel">
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Voz do Brasil</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Foi Mal</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Tanto Faz</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Deus</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                    </article>
 
 
-                <h2>Discografia</h2>
+                </div>
 
-                <article class="albuns">
+                <div class="grupo-carrosel">
 
-                    <div class="album">
+                    <h2>Discografia</h2>
 
-                        <img src="../Imagens/Album_carranca.svg" alt="">
-                        <h3>Carranca</h3>
+                    <article class="carrosel">
 
-                    </div>
+                        <div class="musica">
 
-                    <div class="album">
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Carranca</h3>
 
-                        <img src="../Imagens/Album_furia.svg" alt="">
-                        <h3>Fúria</h3>
+                        </div>
 
-                    </div>
+                        <div class="musica">
 
-                    <div class="album">
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Fúria</h3>
 
-                        <img src="../Imagens/Album_her_mind.svg" alt="">
-                        <h3>Her Mind</h3>
+                        </div>
 
-                    </div>
+                        <div class="musica">
 
-                    <div class="album">
+                            <img src="../Imagens/Album_her_mind.svg" alt="">
+                            <h3>Her Mind</h3>
 
-                        <img src="../Imagens/Album_her_mind_live.svg" alt="">
-                        <h3>Her Mind(Live)</h3>
+                        </div>
 
-                    </div>
+                        <div class="musica">
 
-                </article>
+                            <img src="../Imagens/Album_her_mind_live.svg" alt="">
+                            <h3>Her Mind(Live)</h3>
 
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind_live.svg" alt="">
+                            <h3>Her Mind(Live)</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind_live.svg" alt="">
+                            <h3>Her Mind(Live)</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind_live.svg" alt="">
+                            <h3>Her Mind(Live)</h3>
+
+                        </div>
+
+                    </article>
+
+                </div>
             </div>
 
         </section>
@@ -128,6 +173,17 @@
     </main>
 
     <!-- RODAPÉ -->
+
+    <footer class="cabecalho-inferior">
+        <div class="inferior-cont">
+            <p>Playlist</p>
+            <p>Albuns</p>
+            <p>Artistas</p>
+            <p>Podcasts</p>
+            <p>Baixadas</p>
+        </div>
+        <i class="fa fa-user"></i>
+    </footer>
 
 
 </body>
