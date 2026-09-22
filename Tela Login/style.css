@@ -4,8 +4,14 @@ body {
     background-size: 100% 130%;
 }
 
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .logo {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 200px;
     height: 100px;
 }
@@ -17,31 +23,42 @@ main {
     justify-content: center;
 }
 
-input,
-.campo {
-    border-radius: 5px;
-    max-width: 400px;
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    outline: none;
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 320px;
 }
 
-label,
+/* CAMPOS */
 .campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: 600;
 }
 
-
-.campo {
-    margin-bottom: 10px;
+input{
+    background: linear-gradient(to right, var(--cor-barra), #4e2968);
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .barra-senha {
     position: relative;
-
 }
 
 .olho {
@@ -49,43 +66,47 @@ label,
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    width: 320px;
+.olho img{
+    width: 25px;
+    height: 25px;
 }
 
+/* BOTÃO ENTRAR */
+
 .entrar {
-    margin-top: 60px;
+    margin: 40px auto 15px auto;
     border-radius: 5px;
-    max-width: 300px;
-    width: 85%;
+    max-width: 250px;
+    width: 100%;
     padding: 10px 16px;
     border: none;
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: 600;
     color: var(--cor-branco);
-    background-color: var(--cor-destaque);
+    background: linear-gradient(to right, var(--cor-destaque), #4ab0df6c);
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .sem-conta{
-    border-radius: 10px;
+    /* border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff42, #ffffffb0);
+    padding: 5px 7px; */
+    margin-top: 10px;
     font-size: 0.7em;
     color: var(--cor-branco);
+    text-decoration: none;
 }
 
 .outras-formas{
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
     max-width: 300px;
     width: 100%;
 }
@@ -93,6 +114,7 @@ form {
 .forma{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 50px;
     border-radius: 5px;
     padding: 10px 16px;
@@ -101,6 +123,7 @@ form {
     color: black;
     margin: 10px;
     background-color: var(--cor-texto);
+    cursor: pointer;
 }
 
 .forma img {
@@ -108,8 +131,8 @@ form {
     max-height: 20px;
 }
 
-a {
+.politica {
     color: var(--cor-texto);
     font-size: 0.5em;
-    align-items: center;
+
 }
