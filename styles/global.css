@@ -71,6 +71,11 @@
   box-shadow: 0 4px 12px #0000005f;
 }
 
+.cabecalho-superior .cabecalho-cont .svg-icones {
+ font-size: 40px;
+}
+
+
 .cabecalho-superior .cabecalho-cont .campo-busca p {
   font-size: 20px;
 }
