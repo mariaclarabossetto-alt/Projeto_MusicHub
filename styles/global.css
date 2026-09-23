@@ -126,4 +126,5 @@
   padding: 5px 3px;
   border-radius: 20px;
   background-color: var(--azul);
+  box-shadow: 0 4px 12px #0000005f;
 }
