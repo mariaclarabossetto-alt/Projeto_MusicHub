@@ -89,7 +89,7 @@ main {
 
     position: fixed;
     right: 0;
-    transform: translateY(+14%);
+    transform: translateY(+11vh);
     z-index: 2;
 
     overflow: hidden;
