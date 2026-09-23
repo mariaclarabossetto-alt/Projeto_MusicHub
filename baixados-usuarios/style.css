@@ -1,0 +1,68 @@
+body {
+    background-color: var(--azul-escuro);
+}
+
+main {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+
+.primario {
+    padding: 40px;
+    color: var(--roxo-claro);
+    margin: 10vh 0;
+
+    grid-row: 1/5;
+
+    z-index: 1;
+
+    overflow-x: scroll;
+}
+
+.caroussel {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+
+    overflow: scroll;
+}
+
+.caroussel::-webkit-scrollbar {
+    height: 6px;
+
+}
+
+.caroussel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.caroussel::-webkit-scrollbar-thumb {
+    background: var(--roxo-claro);
+    border-radius: 10px;
+}
+
+.caroussel::-webkit-scrollbar-corner{
+    display: none;
+}
+
+.capas.redondas img {
+    border-radius: 100px;
+}
+
+.capas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.capas img {
+    height: 170px;
+    width: 170px;
+
+    border-radius: 5px;
+}

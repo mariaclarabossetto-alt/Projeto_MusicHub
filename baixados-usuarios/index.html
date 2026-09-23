@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="cabecalho-superior">
+        <div class="cabecalho-cont">
+            <svg class="svg-icones" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path fill="currentColor"
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+            </svg>
+            <div class="campo-busca">
+                <i class="fa fa-magnifying-glass"></i>
+                <input type="text" placeholder="Algo na sua mente?">
+            </div>
+            <svg class="svg-icones" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                <path d="M0 0h16v16H0z" fill="none" />
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M11.5 2a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+            </svg>
+
+        </div>
+        <p class="item-ativo">LOGIN</p>
+    </header>
+    <main>
+        <section class="primario">
+            <section class="secundario-albuns">
+                <h2>Albuns baixados localmente</h2>
+                <section class="caroussel caroussel-musicas">
+                    <article class="capas">
+                        <img src="../assets/capas/aceofspades.webp" alt="">
+                        <h3>Ace of Spades</h3>
+                        <p>Motorhead</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/animals.webp" alt="">
+                        <h3>Animals</h3>
+                        <p>Pink Floyd</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/backinblack.webp" alt="">
+                        <h3>Back in Black</h3>
+                        <p>AC/DC</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/bad.webp" alt="">
+                        <h3>BAD</h3>
+                        <p>Michael Jackson</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/doublefantasy.webp" alt="">
+                        <h3>Double Fantasy</h3>
+                        <p>Jhon Lenon</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/ledzeppelin4.webp" alt="">
+                        <h3>IV</h3>
+                        <p>Led Zeppelin</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/londoncalling.webp" alt="">
+                        <h3>London Calling</h3>
+                        <p>The Clash</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/ninelives.webp" alt="">
+                        <h3>Nine Lives</h3>
+                        <p>Aerosmith</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/capas/powerslave.webp" alt="">
+                        <h3>Powerslave</h3>
+                        <p>Iron Maiden</p>
+                    </article>
+                </section>
+            </section>
+            <section class="secundario-artistas">
+                <h2>Discografias baixadas localmente</h2>
+                <section class="caroussel caroussel-artistas">
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/AC-DC-Logo-1.png" alt="">
+                        <h3>AC/DC</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Aerosmith-Logo.png" alt="">
+                        <h3>Aerosmith</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Bon-Jovi-band-logo.png" alt="">
+                        <h3>Bon Jovi</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/eagles-band-logo.png" alt="">
+                        <h3>Eagles</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Helloween-logo.png" alt="">
+                        <h3>Helloween</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Queen-logo.png" alt="">
+                        <h3>Queen</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Ramones-band-logo.png" alt="">
+                        <h3>Ramones</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Red_Hot_Chili_Peppers_logo.png" alt="">
+                        <h3> Red Hot Chilli Peppers</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/Kiss_Logo.png" alt="">
+                        <h3>KISS</h3>
+                    </article>
+                    <article class="capas redondas">
+                        <img src="../assets/logos-bandas/The_Doors_Logo.png" alt="">
+                        <h3>The Doors</h3>
+                    </article>
+                    </article>
+                </section>
+            </section>
+            <section class="secundario-podcasts">
+                <h2>Podcasts baixados localmente</h2>
+                <section class="caroussel caroussel-podcasts">
+                    <article class="capas">
+                        <img src="../assets/podcasts/cafemanha.jpg" alt="">
+                        <h3>Cafe da manha</h3>
+                        <p>EP1-S7 / 25-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/EchoesOfTomorrow.jpg" alt="">
+                        <h3>Echoes of Tomorrow</h3>
+                        <p>E5-S2 / 21-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/Let's Talk.jpg" alt="">
+                        <h3>Let's Talk</h3>
+                        <p>E1S1 / 22-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/SundayPodcast.jpg" alt="">
+                        <h3>Sunday Podcast</h3>
+                        <p>E3S2 / 19-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/podpah.jpg" alt="">
+                        <h3>PODPAH</h3>
+                        <p>E8S20 / 15-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/flowpodcast.jpg" alt="">
+                        <h3>FLOW PODCAST</h3>
+                        <p>E4S21 / 24-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/inteliglimit.jpg" alt="">
+                        <h3>INTELIGENCIA LIMITADA</h3>
+                        <p>E71 / 30-05-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../assets/podcasts/sacocheio.jpg" alt="">
+                        <h3>SACO CHEIO PODCAST</h3>
+                        <p>E86 / 04-03-2026</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="cabecalho-inferior">
+        <div class="inferior-cont">
+            <p>Playlist</p>
+            <p>Albuns</p>
+            <p>Artistas</p>
+            <p>Podcasts</p>
+            <p class="item-ativo">Baixadas</p>
+        </div>
+        <i class="fa fa-user"></i>
+    </footer>
+</body>
+
+</html>
