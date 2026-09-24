@@ -1,0 +1,107 @@
+main {
+    padding: 120px 100px;
+}
+
+.titulo {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    gap: 170px;
+}
+
+/* INPUT ADICIONAR FOTO */
+
+.receber-imagem {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selecionar-foto {
+    display: none;
+}
+
+span {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 3px dashed #ffffff;
+    /* Espessura, estilo tracejado e cor branca */
+    border-radius: 50%;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+span label{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+span p{
+    max-width: 200px;
+}
+
+/* FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 500px;
+    gap: 25px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dados input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 16px 20px;
+    border-color: #DDD7F9;
+    outline: none;
+    color: #DDD7F9;
+    background-color: transparent;
+}
+
+.dados ::placeholder {
+    color: #DDD7F9;
+}
+
+.dados label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+button{
+    margin: 40px auto 15px auto;
+    border-radius: 5px;
+    max-width: 250px;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor-branco);
+    cursor: pointer;
+    background-color: #4AB1DF;
+}
