@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 44px 60px 40px;
+    padding: 40px 60px;
 }
 
 /* TÍTULO E BOTÃO VOLTAR */
@@ -12,8 +12,8 @@
 .musica__cabecalho {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 28px;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .musica__voltar {
@@ -21,8 +21,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     flex-shrink: 0;
 
     border: 2px solid currentColor;
@@ -54,21 +54,19 @@
 .musica__campos {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 76px;
-    row-gap: 40px;
+    column-gap: 55px;
+    row-gap: 25px;
 }
 
 .musica__campo {
     position: relative;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     min-width: 0;
 }
 
-.musica__campo > label,
+.musica__campo>label,
 .musica__arquivo-titulo {
     font-size: 1.125rem;
     font-weight: var(--peso-medio);
@@ -76,8 +74,8 @@
 
 /* CAMPOS DE TEXTO, DATA E SELEÇÃO */
 
-.musica__campo > input,
-.musica__campo > select {
+.musica__campo>input,
+.musica__campo>select {
     width: 100%;
     min-width: 0;
     min-height: 42px;
@@ -93,12 +91,12 @@
     font-size: var(--fonte-pequena);
 }
 
-.musica__campo > input::placeholder {
+.musica__campo>input::placeholder {
     color: var(--cor-texto);
     opacity: 1;
 }
 
-.musica__campo > select {
+.musica__campo>select {
     padding-right: 40px;
     appearance: none;
 
@@ -110,12 +108,12 @@
     cursor: pointer;
 }
 
-.musica__campo > select option {
+.musica__campo>select option {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
 
-.musica__campo > input[type="datetime-local"] {
+.musica__campo>input[type="datetime-local"] {
     color-scheme: dark;
 }
 
@@ -193,16 +191,16 @@
     transition: transform 0.2s;
 }
 
-.musica__checkbox:checked + .musica__interruptor {
+.musica__checkbox:checked+.musica__interruptor {
     border-color: var(--cor-destaque);
     background-color: var(--cor-destaque);
 }
 
-.musica__checkbox:checked + .musica__interruptor::before {
+.musica__checkbox:checked+.musica__interruptor::before {
     transform: translateX(12px);
 }
 
-.musica__checkbox:focus-visible + .musica__interruptor {
+.musica__checkbox:focus-visible+.musica__interruptor {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 4px;
 }
@@ -241,8 +239,8 @@
     justify-content: center;
     gap: 20px;
 
-    min-height: 82px;
-    padding: 12px 20px;
+    min-height: 75px;
+    padding: 8px 12px;
 
     border: 2px dashed var(--cor-borda);
     border-radius: var(--raio-campo);
@@ -270,7 +268,7 @@
     font-size: var(--fonte-pequena);
 }
 
-.musica__upload-textos > span {
+.musica__upload-textos>span {
     font-size: 0.75rem;
     line-height: 1.3;
 }
@@ -279,7 +277,7 @@
     border-color: var(--cor-destaque);
 }
 
-.musica__upload-input:focus-visible + .musica__upload-area {
+.musica__upload-input:focus-visible+.musica__upload-area {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 4px;
 }
@@ -296,19 +294,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    width: 285px;
+    width: 230px;
+    height: 50px;
     max-width: 100%;
-    min-height: 52px;
-    padding: 8px 24px;
-
+    min-height: 50px;
+    padding: 8px 15px;
     border: 1px solid var(--cor-destaque);
     border-radius: var(--raio-botao);
-
     font: inherit;
     font-weight: var(--peso-negrito);
     text-transform: uppercase;
-
     cursor: pointer;
     transition:
         background-color 0.2s,
@@ -339,8 +334,8 @@
 /* FOCO PARA NAVEGAÇÃO POR TECLADO */
 
 .musica__voltar:focus-visible,
-.musica__campo > input:focus-visible,
-.musica__campo > select:focus-visible,
+.musica__campo>input:focus-visible,
+.musica__campo>select:focus-visible,
 .musica__botao:focus-visible {
     outline: 2px solid var(--cor-destaque);
     outline-offset: 4px;
@@ -381,13 +376,13 @@
         gap: 28px;
     }
 
-    .musica__campo > label,
+    .musica__campo>label,
     .musica__arquivo-titulo {
         font-size: var(--fonte-base);
     }
 
-    .musica__campo > input,
-    .musica__campo > select {
+    .musica__campo>input,
+    .musica__campo>select {
         font-size: var(--fonte-base);
     }
 
@@ -413,6 +408,7 @@
 /* PREFERÊNCIA POR MENOS ANIMAÇÕES */
 
 @media (prefers-reduced-motion: reduce) {
+
     .musica__interruptor,
     .musica__interruptor::before,
     .musica__botao {

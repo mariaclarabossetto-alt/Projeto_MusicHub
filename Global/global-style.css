@@ -28,7 +28,7 @@ html {
     --fonte-pequena: 0.875rem;
     --fonte-base: 1rem;
     --fonte-subtitulo: 1.25rem;
-    --fonte-titulo: 2rem;
+    --fonte-titulo: 1.8rem;
     --peso-regular: 400;
     --peso-medio: 500;
     --peso-negrito: 700;
@@ -64,9 +64,9 @@ body>main {
 .cabecalho {
     display: flex;
     align-items: center;
-    gap: 32px;
-    min-height: 96px;
-    padding: 16px 60px;
+    gap: 30px;
+    min-height: 55px;
+    padding: 10px 40px;
     background-color: var(--cor-barra);
     border-radius: 0 0 var(--raio-barra) var(--raio-barra);
 }
@@ -75,9 +75,9 @@ body>main {
     display: flex;
     flex: 1;
     align-items: center;
-    max-width: 720px;
-    min-height: 46px;
-    padding: 0 16px;
+    max-width: 600px;
+    min-height: 30px;
+    padding: 0 10px;
     background-color: var(--cor-superficie-clara);
     border-radius: var(--raio-pilula);
     box-shadow: var(--sombra-suave);
@@ -88,7 +88,8 @@ body>main {
 .cabecalho__pesquisa input {
     flex: 1;
     min-width: 0;
-    padding: 12px 0;
+    padding: 10px 0;
+    height: 10px;
     border: none;
     background-color: transparent;
     font: inherit;
@@ -102,7 +103,7 @@ body>main {
 
 .cabecalho__perfil {
     margin-left: auto;
-    font-size: var(--fonte-subtitulo);
+    font-size: var(--fonte-base);
     font-weight: var(--peso-negrito);
     text-transform: uppercase;
 }
@@ -153,16 +154,16 @@ body>main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     padding: 0;
     flex-shrink: 0;
 }
 
 .cabecalho__filtros img {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
@@ -173,8 +174,8 @@ body>main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     flex-shrink: 0;
 }
 
@@ -196,7 +197,7 @@ body>main {
 /* RODAPÉ GLOBAL */
 
 .rodape {
-    padding: 24px 60px;
+    padding: 5px 40px;
     background-color: var(--cor-barra);
     border-radius: var(--raio-barra) var(--raio-barra) 0 0;
 }
@@ -204,22 +205,22 @@ body>main {
 .rodape__navegacao {
     display: flex;
     align-items: center;
-    gap: 32px;
-    min-height: 48px;
+    gap: 30px;
+    min-height: 35px;
 }
 
 .rodape__lista {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 30px;
     list-style: none;
 }
 
 .rodape__link,
 .rodape__perfil {
     font: inherit;
-    font-size: var(--fonte-subtitulo);
+    font-size: var(--fonte-base);
     font-weight: var(--peso-negrito);
     color: var(--cor-texto);
     text-decoration: none;
@@ -272,8 +273,8 @@ body>main {
     bottom: calc(100% + 16px);
     left: 0;
     z-index: 10;
-    width: 320px;
-    padding: 24px;
+    width: 200px;
+    padding: 10px;
     background-color: var(--cor-barra);
     border-radius: var(--raio-barra);
     box-shadow: var(--sombra-suave);
@@ -283,12 +284,12 @@ body>main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border: 2px solid currentColor;
     border-radius: 50%;
     color: var(--cor-texto);
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1;
     list-style: none;
     cursor: pointer;
@@ -315,8 +316,8 @@ body>main {
 .rodape__opcoes {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 24px 16px;
+    gap: 15px;
+    padding: 15px 10px;
     list-style: none;
     background-color: var(--cor-superficie-clara);
     border-radius: 20px;
@@ -326,7 +327,7 @@ body>main {
 .rodape__opcoes a {
     display: block;
     padding: 8px 0;
-    font-size: var(--fonte-subtitulo);
+    font-size: var(--fonte-base);
     font-weight: var(--peso-medio);
     color: var(--cor-texto-escuro);
     text-align: center;
@@ -352,8 +353,8 @@ body>main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     margin-left: auto;
     flex-shrink: 0;
     color: var(--cor-texto);
@@ -363,8 +364,8 @@ body>main {
 
 .rodape__perfil svg {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .rodape__perfil:hover,
