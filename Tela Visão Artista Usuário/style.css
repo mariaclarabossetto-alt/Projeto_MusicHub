@@ -5,6 +5,7 @@
 
 .coluna {
     margin: 100px 0 0 40px;
+    max-width: 650px;
 }
 
 .card {
@@ -45,24 +46,31 @@
 
 .grupo-carrosel {
     margin-top: 40px;
-    max-width: 720px;
+    width: 100%;
+    position: relative;
 }
 
 .carrosel {
     display: flex;
     gap: 15px;
-    width: 90%;
-    position: relative;
+    width: 100%;
     overflow-x: scroll;
     /*Cria um carrosel */
-    /* scrollbar-width: none;Tira a barra de scroll */
+    /*Tira a barra de scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
 }
 
-.carrosel::after {
+.carrosel::-webkit-scrollbar {
+  /*Tira a barra de scroll */
+    display: none;/* Chrome*/
+}
+
+.grupo-carrosel::after {
     content: "";
     /* É obrigatorio usar quando utilizamos ::after ou ::before */
     position: absolute;
-    top: 30;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -70,11 +78,6 @@
         linear-gradient(to left, rgba(6, 14, 46, 0.5), transparent 20%);
     pointer-events: none;
 }
-
-.carrosel::-webkit-scrollbar {
-    display: none;
-}
-
 
 .musica {
     display: flex;
@@ -93,129 +96,18 @@ h2 {
     margin-bottom: 10px;
 }
 
-h3 {}
+h3 {
+  text-align: center;
+  max-width: 150px;
+}
 
 /* SOBRE */
 
 .sobre {
-    margin: 50px 100px;
+    margin: 50px 100px 100px 100px;
 }
 
 .sobre h1 {
     font-size: 2em;
     margin-bottom: 20px;
-}
-
-/* TIRAR DEPOIS DO MERGE */
-
-.cabecalho-superior {
-
-  background: var(--roxo);
-  color: var(--roxo-claro);
-  border-radius: 0 0 20px 20px;
-  font-size: 20px;
-
-  padding: 20px 30px;
-  width: 100vw;
-  height: 10vh;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  position: fixed;
-  z-index: 3;
-}
-
-.cabecalho-superior .cabecalho-cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 50px;
-}
-
-.cabecalho-superior .cabecalho-cont i {
-  font-size: 40px;
-}
-
-
-
-.cabecalho-superior .cabecalho-cont .campo-busca {
-  height: 45px;
-  width: 720px;
-
-  background-color: var(--roxo-claro);
-  color: var(--preto);
-
-  padding: 10px;
-
-  border-radius: 30px;
-
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  box-shadow: 0 4px 12px #0000005f;
-}
-
-.cabecalho-superior .cabecalho-cont .campo-busca p {
-  font-size: 20px;
-}
-
-.cabecalho-superior .cabecalho-cont .campo-busca i {
-  font-size: 20px;
-}
-
-.cabecalho-superior .cabecalho-cont .campo-busca input {
-  border: none;
-  outline: none;
-  background: transparent;
-  caret-color: transparent;
-}
-
-.cabecalho-inferior {
-  background: var(--roxo);
-  color: var(--roxo-claro);
-  border-radius: 20px 20px 0 0;
-  font-size: 20px;
-
-  padding: 20px 30px;
-  width: 100vw;
-  height: 10vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  position: fixed;
-  bottom: 0;
-  z-index: 3;
-}
-
-.cabecalho-inferior .inferior-cont {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 30px;
-}
-
-.cabecalho-inferior i {
-  font-size: 30px;
-}
-
-.item-ativo {
-  padding: 5px 3px;
-  border-radius: 20px;
-  background-color: var(--azul);
-}
-
-:root {
-  --azul-escuro: #060E2E;
-  --roxo: #A861C4;
-  --azul: #4AB1DF;
-  --roxo-claro: #DDD7F9;
-  --branco: #FFFFFF;
-  --preto: #000000;
-  --cinza: #727293;
 }
