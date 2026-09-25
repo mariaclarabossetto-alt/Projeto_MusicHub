@@ -301,7 +301,7 @@ body {
     transform: translateY(-3px);
 }
 
-.perfil-usuario .perfil-btn {
+.perfil-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
