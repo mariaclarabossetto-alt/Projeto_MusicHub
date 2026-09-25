@@ -1,0 +1,220 @@
+/* Reset Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra Superior (Header) */
+.cabecalho-superior {
+    background-color: var(--cor-barra);
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.icone-btn {
+    background: none;
+    border: none;
+    color: #DDD7F9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+}
+
+.icone-btn i {
+    font-size: 24px;
+}
+
+.area-pesquisa {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.busca-icone {
+    position: absolute;
+    left: 16px;
+    color: #a861c4;
+    width: 18px;
+    height: 18px;
+}
+
+.busca-input {
+    width: 100%;
+    padding: 10px 16px 10px 44px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f1e7f5;
+    color: #a861c4;
+    font-size: 14px;
+    outline: none;
+}
+
+.busca-input::placeholder {
+    color: #a861c4;
+}
+
+.admin {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+    border-bottom: 4px solid var(--cor-destaque);
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+    flex: 1;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titulo-secao {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Grelha de Albuns */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.capa {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #1a2238;
+}
+
+.capa-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album-titulo {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.album-autor {
+    font-size: 12px;
+    color: #a0a5b5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* Barra Inferior (Footer) */
+.rodape-inferior {
+    background-color: #a25dc4;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-3px);
+    border-bottom: 3px solid var(--cor-destaque);
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.add-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.add-btn i {
+    font-size: 20px;
+}
+
+.add-btn:hover {
+    transform: translateY(-3px);
+}
+
+.perfil-usuario .perfil-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
