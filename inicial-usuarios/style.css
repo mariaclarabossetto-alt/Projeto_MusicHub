@@ -11,6 +11,26 @@ main {
 
 }
 
+.oculto {
+    display: none;
+}
+
+#botao-mostrar{
+    position: fixed;
+    right: 0;
+    background-color: var(--roxo);
+    padding: 10px;
+    color: var(--roxo-claro);
+    transform: translateY(+11vh);
+    z-index: 67;
+    border-radius: 100px;
+    margin-top: 1vh;
+    margin-right: 1vh;
+}
+
+.clicavel {
+    cursor: pointer;
+}
 
 .primario {
     margin: 10vh 0;
