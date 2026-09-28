@@ -1,14 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistas</title>
+    <title>Artista</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../Global/global-style.css">
-    <link rel="shortcut icon" href="../" type="image/x-icon">
+    <link rel="shortcut icon" href="../Imagens/logo_musichub.svg" type="image/x-icon">
+    <!-- TIRAR DEPOIS NO MERGE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    
+
+    <!-- CABEÇALHO -->
+
+     <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+
+            <button class="cabecalho__buscar" type="submit">
+                Buscar
+            </button>
+        </form>
+
+        <button class="cabecalho__filtros" type="button">
+            <img src="../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+
+        <span class="cabecalho__perfil rodape__link">LOGIN</span>
+    </header>
+
+    <!-- ESTRUTURA DA PÁGINA -->
+
+    <main>
+
+        <section class="musicas-albuns">
+
+            <div class="card">
+
+                <img src="../Imagens/Imagem_artista.svg" alt="">
+
+            </div>
+
+            <div class="coluna">
+
+                <h1>Urias</h1>
+
+                <div class="grupo-carrosel">
+
+                    <h2>Músicas mais ouvidas</h2>
+                    
+                    <article class="carrosel">
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Voz do Brasil</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Foi Mal</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Tanto Faz</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Deus</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Vontade de Voar</h3>
+                            <p>Urias</p>
+
+                        </div>
+                        
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Quando a Fonte Secar</h3>
+                            <p>Urias</p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+                <div class="grupo-carrosel">
+
+                    <h2>Discografia</h2>
+
+                    <article class="carrosel">
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_carranca.svg" alt="">
+                            <h3>Carranca</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_furia.svg" alt="">
+                            <h3>Fúria</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind._blossom.svg" alt="">
+                            <h3>Her Mind (Blossom Edition)</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind_live.svg" alt="">
+                            <h3>Her Mind (Live)</h3>
+
+                        </div>
+
+                        <div class="musica">
+
+                            <img src="../Imagens/Album_her_mind.svg" alt="">
+                            <h3>Her Mind</h3>
+
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sobre">
+
+            <h1>Sobre</h1>
+
+            <p>Nascida e criada em Uberlândia, Minas Gerais, Urias começou a desenvolver seu lado artístico na infância.
+                Através da dança e do teatro, apaixonou-se pela moda e sonhou com uma futura carreira musical.
+                Alcançou projeção nacional e internacional em 2019 com o lançamento do single “Diaba”, consolidando-se
+                como uma das grandes revelações da música brasileira.
+                Seu trabalho já transitou por diversos gêneros musicais, como MPB, pop, R&B, Rap e eletrônico, mostrando
+                toda sua versatilidade artística.
+                Em 2025, lançou seu terceiro álbum de estúdio, CARRANCA, trabalho aclamado pela crítica. O projeto
+                aprofunda sua conexão com sua própria história, ancestralidade e espiritualidade, celebrando a cultura
+                afro-brasileira por meio de uma sonoridade densa e contemporânea. O disco conta com participações de
+                Criolo, Don L, Major RD e Giovani Cidreira, e marcou a maior estreia da carreira da artista nas
+                plataformas digitais.</p>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+   <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                 <li>
+                    <a class="rodape__link" href="#">Playlists</a>
+                </li>
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+                <li>
+                    <a class="rodape__link" href="#">Baixados</a>
+                </li>
+                <li>
+            </ul>
+
+            <a class="rodape__perfil" href="#">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+
+                </div></a>
+        </nav>
+    </footer>
+
 </body>
+
 </html>
