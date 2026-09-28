@@ -1,31 +1,38 @@
 body {
-    background-color: var(--azul-escuro);
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-base);
+    font-weight: var(--peso-regular);
+    line-height: var(--altura-linha);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*::-webkit-scrollbar-corner {
+    display: none;
 }
 
 main {
     height: auto;
-
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 300px;
     grid-row: 1fr 1fr 1fr;
-
 }
 
 .oculto {
     display: none;
 }
 
-#botao-mostrar{
+#botao-mostrar {
     position: fixed;
     right: 0;
-    background-color: var(--roxo);
+    background-color: var(--cor-barra);
     padding: 10px;
-    color: var(--roxo-claro);
+    color: var(--cor-texto);
     transform: translateY(+11vh);
-    z-index: 67;
     border-radius: 100px;
-    margin-top: 1vh;
-    margin-right: 1vh;
 }
 
 .clicavel {
@@ -33,13 +40,12 @@ main {
 }
 
 .primario {
-    margin: 10vh 0;
+    grid-column: 1/2;
+
     padding: 40px;
-    color: var(--roxo-claro);
+    color: var(--cor-texto);
 
     grid-row: 1/5;
-
-    z-index: 1;
 
     overflow-x: scroll;
 }
@@ -67,7 +73,7 @@ main {
 }
 
 .caroussel::-webkit-scrollbar-thumb {
-    background: var(--roxo-claro);
+    background: var(--cor-texto);
     border-radius: 10px;
 }
 
@@ -98,19 +104,20 @@ main {
 }
 
 .music-player-lateral {
-    height: 78vh;
-    width: 300px;
+
+    grid-column: 2/3;
+
+    grid-row: 1/5;
+
+    height: auto;
+    width: auto;
 
     padding: 20px 40px;
+    margin: 10px 0;
 
-    color: var(--roxo-claro);
-    background-color: var(--roxo);
+    color: var(--cor-texto);
+    background-color: var(--cor-barra);
     border-radius: 20px;
-
-    position: fixed;
-    right: 0;
-    transform: translateY(+11vh);
-    z-index: 2;
 
     overflow: hidden;
 }
@@ -159,13 +166,21 @@ main {
 }
 
 .music-player-lateral .letras-player {
-    background-color: var(--roxo-claro);
-    color: var(--cinza);
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
     border-radius: 20px;
 
     margin: 15px 0;
     padding: 10px;
 
-    height: 40%;
+
+    min-height: 10%;
+    max-height: 50%;
+    height: auto;
     overflow: scroll;
+}
+
+.music-player-lateral .letras-player p {
+    height: auto;
+    max-height: 500px;
 }

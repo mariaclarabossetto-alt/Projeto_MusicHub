@@ -1,5 +1,5 @@
 body {
-    background-color: var(--azul-escuro);
+    background-color: var(--cor-fundo);
 }
 
 main {
@@ -16,7 +16,7 @@ main {
 
 .primario {
     padding: 40px;
-    color: var(--roxo-claro);
+    color: var(--cor-texto);
     z-index: 1;
 
     overflow-x: scroll;
@@ -40,7 +40,7 @@ main {
 }
 
 .caroussel::-webkit-scrollbar-thumb {
-    background: var(--roxo-claro);
+    background: var(--cor-texto);
     border-radius: 10px;
 }
 
