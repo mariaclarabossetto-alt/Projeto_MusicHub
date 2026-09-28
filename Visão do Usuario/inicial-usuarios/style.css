@@ -136,6 +136,22 @@ main {
     border-radius: 5px;
 }
 
+.music-player-lateral input {
+    width: 100%;
+    accent-color: var(--cor-texto);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--cor-texto);
+    height: 0.67em;
+    border-radius: 67px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: var(--cor-texto);
+}
+
+
 .music-player-lateral .sub-cover {
     margin: 10px 0;
 
