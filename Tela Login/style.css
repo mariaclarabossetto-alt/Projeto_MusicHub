@@ -12,8 +12,8 @@ section{
 
 .logo {
     margin-top: 20px;
-    width: 200px;
-    height: 100px;
+    width: 280px;
+    height: 180px;
 }
 
 main {
@@ -30,7 +30,7 @@ form {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    width: 320px;
+    width: 450px;
 }
 
 /* CAMPOS */
@@ -51,7 +51,7 @@ input{
     color: #fff;
     border-radius: 5px;
     width: 100%;
-    padding: 16px 20px;
+    padding: 22px 26px;
     border: none;
     outline: none;
     box-sizing: border-box;
@@ -81,9 +81,8 @@ input{
 .entrar {
     margin: 40px auto 15px auto;
     border-radius: 5px;
-    max-width: 250px;
-    width: 100%;
-    padding: 10px 16px;
+    width: 350px;
+    padding: 16px 22px;
     border: none;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -107,8 +106,7 @@ input{
 .outras-formas{
     align-items: center;
     margin-top: 15px;
-    max-width: 300px;
-    width: 100%;
+    width: 400px;
 }
 
 .forma{
@@ -117,9 +115,9 @@ input{
     justify-content: flex-start;
     gap: 50px;
     border-radius: 5px;
-    padding: 10px 16px;
+    padding: 16px 22px;
     border: none;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: black;
     margin: 10px;
     background-color: var(--cor-texto);
@@ -134,5 +132,5 @@ input{
 .politica {
     color: var(--cor-texto);
     font-size: 0.5em;
-
+    margin-top: 5px;
 }
