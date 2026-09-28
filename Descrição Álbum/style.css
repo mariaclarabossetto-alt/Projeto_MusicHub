@@ -1,0 +1,42 @@
+/* MAIN */
+.conteudo 
+{
+    margin: 30px 120px;
+}
+
+.conteudo h1
+{
+    font-size: 2.5em;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--cor-branco);
+}
+
+.album 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.informacoes
+{
+    display: flex;
+    flex-direction: row;
+
+    gap: 50px;
+}
+
+.informacoes p
+{
+    font-size: 2em;
+    font-weight: 400;
+
+    color: var(--cor-branco);
+}
