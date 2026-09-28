@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Álbum | MusicHub</title>
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="adicionar-album-style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+            <button class="cabecalho__buscar" type="submit">Buscar</button>
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+    <main class="album">
+        <div class="album__cabecalho">
+            <a class="album__voltar" href="#" aria-label="Voltar para a lista de álbuns">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="m14 5-7 7 7 7" />
+                </svg>
+            </a>
+            <h1 class="album__titulo">Adicionar Novo Álbum</h1>
+        </div>
+        <form class="album__formulario">
+            <div class="album__capa">
+                <label class="album__capa-seletor" for="capa-album">
+                    <img src="../../Imagens/Icone_adic_imagem.svg" alt="">
+                    <span class="album__capa-titulo">Adicionar capa ao álbum</span>
+                    <span class="album__capa-instrucao">
+                        Clique para selecionar a foto do seu álbum
+                    </span>
+                </label>
+                <input class="album__capa-input" type="file" id="capa-album" name="capa" accept="image/*">
+            </div>
+
+            <div class="album__dados">
+                <div class="album__campo">
+                    <label for="nome-album">Nome do álbum:</label>
+                    <input type="text" id="nome-album" name="nome" placeholder="Adicione o nome do seu álbum" required>
+                </div>
+                <div class="album__campo">
+                    <label for="artistas-album">Nome do(s) artista(s):</label>
+                    <select id="artistas-album" name="artistas" multiple required aria-describedby="artistas-ajuda">
+                        <option value="1">Artista de exemplo 1</option>
+                        <option value="2">Artista de exemplo 2</option>
+                        <option value="3">Artista de exemplo 3</option>
+                    </select>
+                    <small id="artistas-ajuda">
+                        No Windows, segure Ctrl para selecionar mais de um artista.
+                    </small>
+                </div>
+                <div class="album__campo">
+                    <label for="genero-album">Gênero musical:</label>
+                    <input type="text" id="genero-album" name="genero" placeholder="Ex.: Reggae, Rock, MPB" required>
+                </div>
+                <details class="album__faixa">
+                    <summary class="album__faixa-acionador">
+                        <span class="album__faixa-texto">+ Adicionar faixa</span>
+                        <span class="album__faixa-icone" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m5 9 7 7 7-7" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <div class="album__faixa-conteudo">
+                        <div class="album__campo">
+                            <label for="musicas-album">
+                                Selecione as músicas:
+                            </label>
+
+                            <select id="musicas-album" name="musicas" multiple aria-describedby="musicas-ajuda">
+                                <option value="1">Música de exemplo 1</option>
+                                <option value="2">Música de exemplo 2</option>
+                                <option value="3">Música de exemplo 3</option>
+                            </select>
+
+                            <small id="musicas-ajuda">
+                                No Windows, segure Ctrl para selecionar mais de uma música.
+                            </small>
+                        </div>
+                    </div>
+                </details>
+                <div class="album__acoes">
+                    <button class="album__salvar" type="button">Salvar e postar</button>
+                    <button class="album__cancelar" type="reset">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="#">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="adicionar-album.html" aria-current="page">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Podcast/adicionar-podcast.html">
+                                        Adicionar Podcast
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
