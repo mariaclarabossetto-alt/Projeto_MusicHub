@@ -66,3 +66,86 @@ main {
 
     border-radius: 5px;
 }
+
+
+.music-player-lateral {
+
+    grid-column: 2/3;
+
+    grid-row: 1/5;
+
+    height: auto;
+    width: auto;
+
+    padding: 20px 40px;
+    margin: 10px 0;
+
+    color: var(--cor-texto);
+    background-color: var(--cor-barra);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.music-player-lateral .icones-player {
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-player-lateral img {
+    height: auto;
+    width: 220px;
+
+    border-radius: 5px;
+}
+
+.music-player-lateral .sub-cover {
+    margin: 10px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.music-player-lateral .sub-cover .textos-player {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-player-lateral .sub-cover .icones-player {
+    font-size: 20px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.music-player-lateral .controles-player {
+    margin-top: 20px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.music-player-lateral .letras-player {
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
+    border-radius: 20px;
+
+    margin: 15px 0;
+    padding: 10px;
+
+
+    min-height: 10%;
+    max-height: 50%;
+    height: auto;
+    overflow: scroll;
+}
+
+.music-player-lateral .letras-player p {
+    height: auto;
+    max-height: 500px;
+}
