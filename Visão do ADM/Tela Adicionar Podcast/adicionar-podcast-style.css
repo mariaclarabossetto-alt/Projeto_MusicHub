@@ -27,7 +27,7 @@
 .formulario-podcast .campo textarea,
 .formulario-podcast .campo select {
     width: 100%;
-    padding: 12px 18px;
+    padding: 10px 20px;
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-campo);
     background-color: transparent;
@@ -69,7 +69,7 @@
 }
 
 .capa-podcast__titulo {
-    margin-bottom: 16px;
+    margin-bottom: 55px;
     font-size: var(--fonte-subtitulo);
     font-weight: var(--peso-negrito);
 }
@@ -86,7 +86,7 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    min-height: 250px;
+    min-height: 200px;
     padding: 24px;
     border: 2px dashed var(--cor-borda);
     border-radius: var(--raio-campo);
@@ -126,7 +126,7 @@
 
 .formulario-podcast__topo {
     display: grid;
-    grid-template-columns: minmax(0, 390px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 500px) minmax(0, 1fr);
     align-items: start;
     gap: 64px;
 }
@@ -341,7 +341,7 @@
 
 @media (min-width: 801px) {
     .formulario-podcast__inferior {
-        grid-template-rows: auto auto;
+        grid-template-rows: 130px;
         column-gap: 64px;
         row-gap: 16px;
     }
