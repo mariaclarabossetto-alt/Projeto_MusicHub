@@ -93,6 +93,12 @@ input{
     box-sizing: border-box;
 }
 
+.botao-entrar{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .sem-conta{
     /* border-radius: 10px;
     background: linear-gradient(to bottom, #ffffff42, #ffffffb0);
