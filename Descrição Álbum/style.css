@@ -2,6 +2,8 @@
 .conteudo 
 {
     margin: 30px 120px;
+
+    color: var(--cor-branco);
 }
 
 .conteudo h1
@@ -11,8 +13,6 @@
 
     display: flex;
     justify-content: center;
-
-    color: var(--cor-branco);
 }
 
 .album 
@@ -22,7 +22,7 @@
     justify-content: center;
 
     margin-top: 30px;
-    gap: 50px;
+    gap: 10%;
 }
 
 .informacoes
@@ -33,10 +33,56 @@
     gap: 50px;
 }
 
-.informacoes p
+.musicas,
+.minutos
 {
     font-size: 2em;
     font-weight: 400;
 
     color: var(--cor-branco);
+}
+
+.visualizacao
+{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.identificacao
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+
+    gap: 10px;
+}
+
+.identificacao h3
+{
+    font-weight: 400;
+}
+
+.descricao
+{
+    margin-top: 15px;
+}
+.descricao h2
+{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.descricao p
+{
+    margin-top: 5px;
+    
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.cinza
+{
+    text-transform: uppercase;
+    color: #ffffff8c;
 }
