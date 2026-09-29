@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <!-- Ligação ao ficheiro CSS externo -->
+     <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="PáginaInicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Barra Superior -->
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+
+        <!-- Secção 1: Em alta -->
+        <section class="musica">
+            <h2 class="titulo-secao">Em alta</h2>
+            
+            <div class="musica-grid">
+                <!-- Card 1 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_highway.svg" alt="Capa Highway to Hell" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">Highway to Hell</h3>
+                    <p class="musica-autor">AC/DC</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_caju.svg" alt="Capa Caju" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">Caju</h3>
+                    <p class="musica-autor">Liniker</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_dtmf.svg" alt="Capa DtMF" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">DtMF</h3>
+                    <p class="musica-autor">Bad Bunny</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_coisasNaturais.svg" alt="Capa Coisas Naturais" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">Coisas Naturais</h3>
+                    <p class="musica-autor">Marina Sena</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_aindaCedo.svg" alt="Capa Ainda é Cedo" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">Ainda é Cedo</h3>
+                    <p class="musica-autor">Legião Urbana</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Musica_freelance.svg" alt="Capa Freelance" class="capa-img">
+                    </div>
+                    <h3 class="musica-titulo">Freelance</h3>
+                    <p class="musica-autor">Survivar</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secção 2: Novidades -->
+        <section class="musica">
+            <h2 class="titulo-secao">Novidades</h2>
+
+            <div class="musica-grid">
+                <!-- Card 1 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_urias.svg" alt="Capa Urias" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Urias</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_djavan.svg" alt="Capa Djavan" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Djavan</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_emicida.svg" alt="Capa Emicida" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Emicida</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_lauryn.svg" alt="Capa Lauryn Hill" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Lauryn Hill</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_kiss.svg" alt="Capa Kiss" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Kiss</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="musica-card">
+                    <div class="capa">
+                        <img src="../../Imagens/Artista_nanda.svg" alt="Capa Nanda" class="capa-img">
+                    </div>
+                    <p class="musica-autor">Nanda</p>
+                </article>
+            </div>
+        </section>
+        
+        <aside class="music-player-lateral">
+            <div class="icones-player">
+                <i class="fa-solid fa-angle-down"></i>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+            <img src="../../Imagens/Musica_highway.svg"
+                alt="" class="capa-album">
+            <div class="sub-cover">
+                <div class="textos-player">
+                    <h2>Highway to Hell</h2>
+                    <h3>AC/DC</h3>
+                </div>
+                <div class="icones-player">
+                    <i class="fa fa-download"></i>
+                    <i class="fa fa-circle-plus"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="controles-player">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="letras-player">
+                <p>
+                    Living easy, lovin' free <br>
+                    Season ticket on a one way ride <br>
+                    Asking nothing, leave me be <br>
+                    Taking everythin' in my stride <br>
+                    Don't need reason, don't need rhyme <br>
+                    Ain't nothing I'd rather do <br>
+                    Goin' down, party time <br>
+                    My friends are gonna be there too, yeah <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+
+                    No stop signs, speed limit <br>
+                    Nobody's gonna slow me down <br>
+                    Like a wheel, gonna spin it <br>
+                    Nobody's gonna mess me around <br>
+                    Hey Satan, payin' my dues <br>
+                    Playing in a rocking band <br>
+                    Hey mama, look at me <br>
+                    I'm on the way to the promised land <br>
+                    Woo! <br>
+
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+
+                    Don't stop me <br>
+                    Heh, heh! <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    (Highway to hell) I'm on the highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) <br>
+
+                    And I'm going down <br>
+                    All the way <br>
+                    I'm on the highway to hell <br>
+                </p>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- Rodapé / Barra de Navegação Inferior -->
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="#">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Musica/adicionar-musica.html">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Podcast/adicionar-podcast.html">
+                                        Adicionar Podcast
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
