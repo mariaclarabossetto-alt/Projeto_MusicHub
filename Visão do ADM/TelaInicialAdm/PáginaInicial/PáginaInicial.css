@@ -93,7 +93,7 @@ body {
     background-color: var(--roxo);
     border-radius: 20px;
 
-    position: fixed;
+    position: absolute;
     right: 0;
     z-index: 2;
 
@@ -170,4 +170,35 @@ body {
 
     height: 40%;
     overflow: scroll;
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+        padding: 20px 16px;
+        gap: 28px;
+    }
+
+    .musica-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+    .titulo-secao {
+        font-size: 1.1rem;
+    }
+
+    .music-player-lateral {
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        max-height: 100%;
+    }
+
+    .music-player-lateral .capa-album {
+        max-width: 180px;
+    }
+
+    .controles-player {
+        font-size: 1.5rem;
+    }
 }
