@@ -32,7 +32,7 @@ main {
 
 .caroussel::-webkit-scrollbar {
     height: 6px;
-
+    display: none;
 }
 
 .caroussel::-webkit-scrollbar-track {
@@ -65,7 +65,6 @@ main {
 
     border-radius: 5px;
 }
-
 
 .music-player-lateral {
 
@@ -100,51 +99,17 @@ main {
     border-radius: 5px;
 }
 
-.music-player-lateral .sub-cover {
-    margin: 10px 0;
-
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.music-player-lateral input {
+    width: 100%;
+    accent-color: var(--cor-texto);
 }
 
-.music-player-lateral .sub-cover .textos-player {
-    display: flex;
-    flex-direction: column;
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--cor-texto);
+    height: 0.67em;
+    border-radius: 67px;
 }
 
-.music-player-lateral .sub-cover .icones-player {
-    font-size: 20px;
-
-    display: flex;
-    gap: 5px;
-}
-
-.music-player-lateral .controles-player {
-    margin-top: 20px;
-    font-size: 30px;
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.music-player-lateral .letras-player {
-    background-color: var(--cor-texto);
-    color: var(--cor-fundo);
-    border-radius: 20px;
-
-    margin: 15px 0;
-    padding: 10px;
-
-
-    min-height: 10%;
-    max-height: 50%;
-    height: auto;
-    overflow: scroll;
-}
-
-.music-player-lateral .letras-player p {
-    height: auto;
-    max-height: 500px;
+input[type="range"]::-moz-range-track {
+    background: var(--cor-texto);
 }
