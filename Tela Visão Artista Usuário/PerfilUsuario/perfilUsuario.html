@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Perfil - MusicHub</title>
+    <link rel="shortcut icon" href="../../Imagens/logo_musichub.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="perfilUsuario.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+
+            <button class="cabecalho__buscar" type="submit">
+                Buscar
+            </button>
+        </form>
+
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="profile-container">
+            <div class="foto-perfil">
+                <img id="visualizacao-foto" src="../../Imagens/icone-perfil-generico.png" alt="Foto de perfil"
+                    class="foto-avatar">
+                <label for="foto-input" class="botao-editar" title="Alterar foto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                    </svg>
+                </label>
+                <input type="file" id="foto-input" accept="image/*">
+            </div>
+            <form class="formulario-usuario">
+                    <div class="campo">
+                        <label for="nome" class="dados-usuario">Nome de Usuário</label>
+                        <input type="text" id="nome" placeholder="Insira seu nome">
+                    </div>
+                    <div class="campo">
+                        <label for="email" class="dados-usuario">E-mail</label>
+                        <input type="email" id="email" placeholder="seunome@email.com">
+                    </div>
+                    <div class="campo">
+                        <label for="celular" class="dados-usuario">Celular</label>
+                        <input type="tel" id="celular" placeholder="(11) 9 9999-9999">
+                    </div>
+                    <button class="btn-senha" id="alterar-senha">Alterar Senha</button>
+                    <div class="trocar-senha ativo">
+                        <h3>Insira sua senha</h3>
+                        <div class="campo-senha">
+                            <label for="senha-antiga">Senha antiga</label>
+                            <input type="password" id="senha-antiga" placeholder="*****">
+                        </div>
+                        <div class="campo-senha">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" placeholder="*****">
+                        </div>
+                        <div class="campo-senha">
+                            <label for="senha-confirmar">Confirme sua senha</label>
+                            <input type="password" id="senha-confirmar" placeholder="*****">
+                        </div>
+                        <div class="finalizar-Senha">
+                            <button type="reset" class="btn-cancelar">CANCELAR</button>
+                            <button type="submit" class="btn-salvar-senha">SALVAR</button>
+                        </div>
+                    </div>
+                </form>
+            <!-- <form class="profile-form">
+                <div class="form-grid">
+                
+                    <div class="form-group">
+                        <label for="nome">Nome de Usuário</label>
+                        <input type="text" id="nome" value="Carlos Silva">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="senha-antiga">SENHA ANTIGA</label>
+                        <input type="password" id="senha-antiga">
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" value="carlossilva@gmail.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha-nova">SENHA NOVA</label>
+                        <input type="password" id="senha-nova">
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" value="(11) 99999-9999">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="confirmar-senha">CONFIRMAR SENHA</label>
+                        <input type="password" id="confirmar-senha">
+                    </div>
+                </div>
+               
+            </form> -->
+            <button type="submit" class="btn-salvar">SALVAR</button>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
