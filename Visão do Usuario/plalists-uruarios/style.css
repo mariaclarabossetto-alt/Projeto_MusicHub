@@ -1,66 +1,33 @@
 body {
-    font-family: var(--fonte-principal);
-    font-size: var(--fonte-base);
-    font-weight: var(--peso-regular);
-    line-height: var(--altura-linha);
     background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-*::-webkit-scrollbar-corner {
-    display: none;
 }
 
 main {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
 }
 
-.oculto {
-    display: none;
-}
-
-#botao-mostrar {
-    position: fixed;
-    right: 0;
-    background-color: var(--cor-barra);
-    padding: 10px;
-    color: var(--cor-texto);
-    transform: translateY(+11vh);
-    border-radius: 100px;
-}
-
-.clicavel {
-    cursor: pointer;
+.gap {
+    margin: 10vh 0;
 }
 
 .primario {
-    grid-column: 1/2;
-
     padding: 40px;
     color: var(--cor-texto);
-
-    grid-row: 1/5;
+    z-index: 1;
 
     overflow-x: scroll;
 }
 
 .caroussel {
     text-align: center;
-    margin: 20px 0;
     display: flex;
     gap: 30px;
 
     overflow: scroll;
-}
-
-.caroussel-musicas {
-    grid-row: 1/2;
 }
 
 .caroussel::-webkit-scrollbar {
@@ -77,12 +44,8 @@ main {
     border-radius: 10px;
 }
 
-.caroussel-artistas {
-    grid-row: 2/3;
-}
-
-.caroussel-podcasts {
-    grid-row: 3/4;
+.caroussel::-webkit-scrollbar-corner{
+    display: none;
 }
 
 .capas.redondas img {
@@ -102,6 +65,7 @@ main {
 
     border-radius: 5px;
 }
+
 .music-player-lateral {
 
     grid-column: 2/3;
