@@ -1,0 +1,113 @@
+.musicas-albuns {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.coluna {
+    margin: 100px 0 0 40px;
+    max-width: 650px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    /* Faz a caixinha ter o tamanho exato da imagem */
+    overflow: hidden;
+    /* conteúdo que passar do limite do tamanho da caixa é cortado e fica escondido. */
+    width: 500px;
+}
+
+.card img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card::after {
+    content: "";
+    /* É obrigatorio usar quando utilizarmos ::after ou ::before */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(6, 14, 46, 2), transparent 23%),
+        linear-gradient(to left, rgba(6, 14, 46, 2), transparent 23%);
+    pointer-events: none;
+}
+
+.coluna h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* CARROSEL */
+
+.grupo-carrosel {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.carrosel {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow-x: scroll;
+    /*Cria um carrosel */
+    /*Tira a barra de scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
+}
+
+.carrosel::-webkit-scrollbar {
+  /*Tira a barra de scroll */
+    display: none;/* Chrome*/
+}
+
+.grupo-carrosel::after {
+    content: "";
+    /* É obrigatorio usar quando utilizamos ::after ou ::before */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(6, 14, 46, 0.5), transparent 20%),
+        linear-gradient(to left, rgba(6, 14, 46, 0.5), transparent 20%);
+    pointer-events: none;
+}
+
+.musica {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.musica img {
+    width: 150px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  max-width: 150px;
+}
+
+/* SOBRE */
+
+.sobre {
+    margin: 50px 100px 100px 100px;
+}
+
+.sobre h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}

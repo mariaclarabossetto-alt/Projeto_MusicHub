@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Podcasts</title>
+    <!-- Ligação ao ficheiro CSS externo -->
+     <link rel="stylesheet" href="../../../Global/global-style.css">
+    <link rel="stylesheet" href="Podcasts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Barra Superior -->
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+
+        <!-- Secção 1: Recentes -->
+        <section class="podcast">
+            <h2 class="titulo-secao">Recentes</h2>
+            
+            <div class="podcast-grid">
+                <!-- Card 1 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_naoInviabilize.svg" alt="Capa Não Inviabilize" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Não Inviabilize</h3>
+                    <p class="podcast-autor">Déia Freitas</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_cafeDeus.svg" alt="Capa Café com Deus Pai" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Café com Deus Pai</h3>
+                    <p class="podcast-autor">Júnior Rostirola</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_cafeManha.svg" alt="Capa Café da manhã" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Café da manhã</h3>
+                    <p class="podcast-autor">Spotify Studios / Folha</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_jota.svg" alt="Capa Jota Jota Podcast" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Jota Jota Podcast</h3>
+                    <p class="podcast-autor">Joel Jota</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_inteligencia.svg" alt="Capa Inteligência Ltda." class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Inteligência Ltda.</h3>
+                    <p class="podcast-autor">Rogério Vilela</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_podpah.svg" alt="Capa PodPah" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">PodPah</h3>
+                    <p class="podcast-autor">Igão e Mítico</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secção 2: Últimas publicações -->
+        <section class="podcast">
+            <h2 class="titulo-secao">Ultimas publicações</h2>
+            
+            <div class="podcast-grid">
+                <!-- Card 1 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_naoInviabilize.svg" alt="Capa Não inviabilize" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Não inviabilize</h3>
+                    <p class="podcast-autor">Déia Freitas</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_cafeDeus.svg" alt="Capa Café com Deus Pai" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Café com Deus Pai</h3>
+                    <p class="podcast-autor">Júnior Rostirola</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_cafeManha.svg" alt="Capa Café da manhã" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Café da manhã</h3>
+                    <p class="podcast-autor">Spotify Studios / Folha</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_jota.svg" alt="Capa Jota Jota Podcast" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Jota Jota Podcast</h3>
+                    <p class="podcast-autor">Joel Jota</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_inteligencia.svg" alt="Capa Inteligência Ltda." class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">Inteligência Ltda.</h3>
+                    <p class="podcast-autor">Rogério Vilela</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="podcast-card">
+                    <div class="capa">
+                        <img src="../../../Imagens/Podcast_podpah.svg" alt="Capa PodPah" class="capa-img">
+                    </div>
+                    <h3 class="podcast-titulo">PodPah</h3>
+                    <p class="podcast-autor">Igão e Mítico</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé / Barra de Navegação Inferior -->
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="../../Tela Add Artistas/index.html">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Tela Add Música/adicionar-musica.html">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Tela Adicionar Album/adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../../Tela Adicionar Podcast/adicionar-podcast.html">Adicionar Podcast</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

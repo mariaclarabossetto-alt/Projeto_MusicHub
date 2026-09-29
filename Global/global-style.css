@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 
 * {
     margin: 0;
@@ -86,13 +87,13 @@ body>main {
 }
 
 .cabecalho__pesquisa input {
-    flex: 1;
-    min-width: 0;
-    padding: 12px 0;
+    width: 100%;
+    padding: 10px 16px 10px 44px;
+    border-radius: 20px;
     border: none;
     background-color: transparent;
-    font: inherit;
-    color: var(--cor-texto-escuro);
+    font-size: 14px;
+    outline: none;
 }
 
 .cabecalho__pesquisa input::placeholder {
@@ -116,18 +117,6 @@ body>main {
     font: inherit;
     font-weight: var(--peso-negrito);
     cursor: pointer;
-}
-
-.cabecalho__pesquisa .cabecalho__buscar {
-    display: none;
-    color: var(--cor-texto-escuro);
-    flex-shrink: 0;
-}
-
-.cabecalho__pesquisa:focus-within .cabecalho__buscar {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .cabecalho__lupa {
@@ -185,14 +174,6 @@ body>main {
     object-fit: contain;
 }
 
-
-.cabecalho a:focus-visible,
-.cabecalho button:focus-visible,
-.cabecalho input:focus-visible {
-    outline: 2px solid var(--cor-texto-escuro);
-    outline-offset: 3px;
-}
-
 /* RODAPÉ GLOBAL */
 
 .rodape {
@@ -241,6 +222,7 @@ body>main {
     width: 30px;
     height: 3px;
     background-color: var(--cor-destaque);
+    transition: width 0.2s ease-out;
 }
 
 .rodape__link[aria-current="page"] {
@@ -288,8 +270,9 @@ body>main {
     border: 2px solid currentColor;
     border-radius: 50%;
     color: var(--cor-texto);
-    font-size: 28px;
-    line-height: 1;
+    font-size: 25px;
+    line-height: 0;
+    padding-bottom: 4px;
     list-style: none;
     cursor: pointer;
     transition: color 0.2s;
@@ -426,11 +409,6 @@ body>main {
         align-self: center;
         justify-self: end;
         font-size: var(--fonte-base);
-    }
-
-    .cabecalho__pesquisa .cabecalho__buscar {
-        padding: 8px 4px;
-        font-size: var(--fonte-pequena);
     }
 
     .rodape {

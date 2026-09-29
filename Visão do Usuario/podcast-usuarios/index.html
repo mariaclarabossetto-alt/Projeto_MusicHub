@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="shortcut icon" href="../Imagens/MusicHub - logo.svg" type="image/x-icon">
+</head>
+
+<body>
+   <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+
+            <button class="cabecalho__buscar" type="submit">
+                Buscar
+            </button>
+        </form>
+
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+
+        <span class="cabecalho__perfil rodape__link">LOGIN</span>
+    </header>
+    <main>
+        <section class="primario">
+            <section class="secundario-podcasts">
+                <h2>Assistidos Recentemente</h2>
+                <section class="caroussel caroussel-podcasts">
+                    <article class="capas">
+                        <img src="../../assets/podcasts/cafemanha.jpg" alt="">
+                        <h3>Cafe da manha</h3>
+                        <p>EP1-S7 / 25-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/EchoesOfTomorrow.jpg" alt="">
+                        <h3>Echoes of Tomorrow</h3>
+                        <p>E5-S2 / 21-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/Let's Talk.jpg" alt="">
+                        <h3>Let's Talk</h3>
+                        <p>E1S1 / 22-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/SundayPodcast.jpg" alt="">
+                        <h3>Sunday Podcast</h3>
+                        <p>E3S2 / 19-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/podpah.jpg" alt="">
+                        <h3>PODPAH</h3>
+                        <p>E8S20 / 15-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/flowpodcast.jpg" alt="">
+                        <h3>FLOW PODCAST</h3>
+                        <p>E4S21 / 24-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/inteliglimit.jpg" alt="">
+                        <h3>INTELIGENCIA LIMITADA</h3>
+                        <p>E71 / 30-05-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/sacocheio.jpg" alt="">
+                        <h3>SACO CHEIO PODCAST</h3>
+                        <p>E86 / 04-03-2026</p>
+                    </article>
+                </section>
+
+                <h2>Novos episodios</h2>
+                <section class="caroussel caroussel-podcasts">
+                    <article class="capas">
+                        <img src="../../assets/podcasts/cafemanha.jpg" alt="">
+                        <h3>Cafe da manha</h3>
+                        <p>EP1-S7 / 25-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/EchoesOfTomorrow.jpg" alt="">
+                        <h3>Echoes of Tomorrow</h3>
+                        <p>E5-S2 / 21-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/Let's Talk.jpg" alt="">
+                        <h3>Let's Talk</h3>
+                        <p>E1S1 / 22-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/SundayPodcast.jpg" alt="">
+                        <h3>Sunday Podcast</h3>
+                        <p>E3S2 / 19-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/podpah.jpg" alt="">
+                        <h3>PODPAH</h3>
+                        <p>E8S20 / 15-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/flowpodcast.jpg" alt="">
+                        <h3>FLOW PODCAST</h3>
+                        <p>E4S21 / 24-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/inteliglimit.jpg" alt="">
+                        <h3>INTELIGENCIA LIMITADA</h3>
+                        <p>E71 / 30-05-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/sacocheio.jpg" alt="">
+                        <h3>SACO CHEIO PODCAST</h3>
+                        <p>E86 / 04-03-2026</p>
+                    </article>
+                </section>
+
+                <h2>Recomendados</h2>
+                <section class="caroussel caroussel-podcasts">
+                    <article class="capas">
+                        <img src="../../assets/podcasts/cafemanha.jpg" alt="">
+                        <h3>Cafe da manha</h3>
+                        <p>EP1-S7 / 25-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/EchoesOfTomorrow.jpg" alt="">
+                        <h3>Echoes of Tomorrow</h3>
+                        <p>E5-S2 / 21-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/Let's Talk.jpg" alt="">
+                        <h3>Let's Talk</h3>
+                        <p>E1S1 / 22-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/SundayPodcast.jpg" alt="">
+                        <h3>Sunday Podcast</h3>
+                        <p>E3S2 / 19-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/podpah.jpg" alt="">
+                        <h3>PODPAH</h3>
+                        <p>E8S20 / 15-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/flowpodcast.jpg" alt="">
+                        <h3>FLOW PODCAST</h3>
+                        <p>E4S21 / 24-06-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/inteliglimit.jpg" alt="">
+                        <h3>INTELIGENCIA LIMITADA</h3>
+                        <p>E71 / 30-05-2026</p>
+                    </article>
+                    <article class="capas">
+                        <img src="../../assets/podcasts/sacocheio.jpg" alt="">
+                        <h3>SACO CHEIO PODCAST</h3>
+                        <p>E86 / 04-03-2026</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <aside class="music-player-lateral" id="player">
+            <div class="icones-player">
+                <i class="fa-solid fa-angle-down clicavel" id="botao-minimizar"></i>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F5538ab98016314fd6d617ffb3d5d926b.1000x1000x1.png&f=1&nofb=1&ipt=46fe8cd169bba7584ffda0a6048237ec7b70d485cfcf71c64fba35294ac533b0"
+                alt="" class="capa-album">
+            <div class="sub-cover">
+                <div class="textos-player">
+                    <h2 style="font-size: 20px;">NOME MUSICA</h2>
+                    <h3 style="font-size: 10px;">NOME ARTISTA</h3>
+                </div>
+                <div class="icones-player">
+                    <i class="fa fa-download"></i>
+                    <i class="fa fa-circle-plus"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="controles-player">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="letras-player">
+                <p>
+                    Living easy, lovin' free <br>
+                    Season ticket on a one way ride <br>
+                    Asking nothing, leave me be <br>
+                    Taking everythin' in my stride <br>
+                    Don't need reason, don't need rhyme <br>
+                    Ain't nothing I'd rather do <br>
+                    Goin' down, party time <br>
+                    My friends are gonna be there too, yeah <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+
+                    No stop signs, speed limit <br>
+                    Nobody's gonna slow me down <br>
+                    Like a wheel, gonna spin it <br>
+                    Nobody's gonna mess me around <br>
+                    Hey Satan, payin' my dues <br>
+                    Playing in a rocking band <br>
+                    Hey mama, look at me <br>
+                    I'm on the way to the promised land <br>
+                    Woo! <br>
+
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+
+                    Don't stop me <br>
+                    Heh, heh! <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    (Highway to hell) I'm on the highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) <br>
+
+                    And I'm going down <br>
+                    All the way <br>
+                    I'm on the highway to hell <br>
+                </p>
+            </div>
+        </aside>
+
+        <aside class="oculto" id="botao-mostrar">
+            <i class="fa-solid fa-angle-down clicavel"></i>
+        </aside>
+
+    </main>
+     <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                 <li>
+                    <a class="rodape__link" href="#">Playlists</a>
+                </li>
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+                <li>
+                    <a class="rodape__link" href="#">Baixados</a>
+                </li>
+                <li>
+            </ul>
+
+            <a class="rodape__perfil" href="#">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+
+                </div></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
