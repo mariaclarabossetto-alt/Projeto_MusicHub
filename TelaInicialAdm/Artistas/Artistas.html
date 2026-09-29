@@ -12,23 +12,20 @@
 <body>
 
     <!-- Cabeçalho / Barra Superior -->
-    <header class="cabecalho-superior">
-        <button class="icone-btn casa-btn">
-            <i class="fas fa-home"></i>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
         </button>
-
-        <div class="area-pesquisa">
-            <i class="fas fa-search busca-icone"></i>
-            <input type="text" placeholder="Algo em específico hoje?" class="busca-input">
-        </div>
-
-        <button class="icone-btn filtro-btn">
-            <i class="fas fa-sliders-h"></i>
-        </button>
-
-        <div class="admin">
-            Administrador
-        </div>
+        <span class="cabecalho__perfil">Administrador</span>
     </header>
 
     <!-- Conteúdo Principal -->
@@ -147,21 +144,63 @@
     </main>
 
     <!-- Rodapé / Barra de Navegação Inferior -->
-    <footer class="rodape-inferior">
-        <nav class="nav-links">
-            <a href="../Albuns/Albuns.html" class="nav-item">Álbuns</a>
-            <a href="../Artistas/Artistas.html" class="nav-item">Artistas</a>
-            <a href="../Podcasts/Podcasts.html" class="nav-item">Podcasts</a>
-            <button class="add-btn">
-                <i class="fas fa-plus-circle"></i>
-            </button>
-        </nav>
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="#">Álbuns</a>
+                </li>
 
-        <div class="perfil-usuario">
-            <button class="icon-btn perfil-btn">
-                <i class="fas fa-user"></i>
-            </button>
-        </div>
+                <li>
+                    <a class="rodape__link" href="#">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="#">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="#">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Musica/adicionar-musica.html">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Podcast/adicionar-podcast.html">
+                                        Adicionar Podcast
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="#" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
