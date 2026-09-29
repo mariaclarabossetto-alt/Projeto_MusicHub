@@ -1,3 +1,27 @@
+body {
+  background-image: url(../../Imagens/Bolinhas.svg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.logo-container{
+ height: 60px; /* Ou qualquer valor desejado */
+  width: auto;  /* Permite que o container se ajuste à proporção */
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  max-height: 100%;    
+  max-width: 100%; 
+  width: auto;          
+  height: auto;         
+  object-fit: contain;
+}
+
+
 .conteudo-principal {  
   display: flex;
   justify-content: center;
@@ -78,12 +102,7 @@
   gap: 20px 35px;
 }
 
-/* .form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 35px;
-  width: 100%;
-} */
+
 
 .campo {
   display: flex;
@@ -127,7 +146,7 @@
 
   cursor: pointer;
 
-    position: relative;
+  position: relative;
 }
 
 
@@ -149,6 +168,8 @@
   padding: 20px 30px;
 
   position: absolute;
+  bottom: 38%;
+  right: 30%;
 } 
 
 .campo-senha {
@@ -194,7 +215,10 @@
 
 
 
-
+.finalizar-acao {
+  display: flex;
+  gap: 20px;
+}
 
 
 
@@ -203,19 +227,22 @@
   background-color: var(--cor-destaque); 
   color: var(--cor-branco);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
   padding: 12px 50px;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-size: var(--fonte-base);
+  font-weight: var(--peso-negrito);
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.btn-salvar:hover {
-  background-color: #3aa8dc;
-}
 
-.btn-salvar:active {
-  transform: scale(0.98);
+.btn-sair {
+  margin-top: 40px;
+  background-color: red; 
+  color: var(--cor-branco);
+  border: none;
+  border-radius: var(--raio-botao);
+  padding: 12px 50px;
+  font-size: var(--fonte-base);
+  font-weight: var(--peso-negrito);
+  cursor: pointer;
 }
