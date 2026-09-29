@@ -2,9 +2,9 @@
 
 .musica {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1460px;
     margin: 0 auto;
-    padding: 44px 60px 40px;
+    padding: 30px 30px;
 }
 
 /* TÍTULO E BOTÃO VOLTAR */
@@ -297,10 +297,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 285px;
+    width: 260px;
     max-width: 100%;
-    min-height: 52px;
-    padding: 8px 24px;
+    min-height: 50px;
 
     border: 1px solid var(--cor-destaque);
     border-radius: var(--raio-botao);
