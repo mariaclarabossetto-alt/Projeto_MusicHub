@@ -40,24 +40,26 @@ main {
 }
 
 .primario {
-    grid-column: 1/2;
-
-    padding: 40px;
     color: var(--cor-texto);
-
-    grid-row: 1/5;
+    z-index: 1;
 
     overflow-x: scroll;
 }
 
 .caroussel {
     text-align: center;
-    margin: 20px 0;
     display: flex;
     gap: 30px;
 
-    overflow: scroll;
+    overflow-x: scroll;
 }
+
+.secundario-albuns,
+.secundario-artistas,
+.secundario-podcasts {
+    padding: 40px;
+}
+
 
 .caroussel-musicas {
     grid-row: 1/2;
@@ -65,17 +67,26 @@ main {
 
 .caroussel::-webkit-scrollbar {
     height: 6px;
-    display: none;
+    opacity: 0;
 }
 
-.caroussel::-webkit-scrollbar-track {
+.caroussel:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.caroussel:hover::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.caroussel::-webkit-scrollbar-thumb {
+.caroussel:hover::-webkit-scrollbar-thumb {
     background: var(--cor-texto);
     border-radius: 10px;
 }
+
+.carousse:hover::-webkit-scrollbar-corner {
+    display: none;
+}
+
 
 .caroussel-artistas {
     grid-row: 2/3;
@@ -102,6 +113,7 @@ main {
 
     border-radius: 5px;
 }
+
 .music-player-lateral {
 
     grid-column: 2/3;
