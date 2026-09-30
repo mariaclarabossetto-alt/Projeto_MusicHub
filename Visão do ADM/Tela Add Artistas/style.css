@@ -7,6 +7,26 @@ main {
     gap: 20px;
 }
 
+.titulo a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    border: 2px solid currentColor;
+    border-radius: var(--raio-campo);
+
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.titulo a:hover {
+    color: var(--cor-destaque);
+}
+
 section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -44,15 +64,25 @@ section {
     justify-content: center;
     gap: 5px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .add-imagem label{
     font-weight: 700;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
-.add-imagem p{
+.clique{
     max-width: 200px;
+    font-weight: 300;
+}
+
+.add-imagem:hover{
+    border-color: var(--cor-destaque);;
 }
 
 /* FORMULARIO */
@@ -73,17 +103,21 @@ section {
 }
 
 .dados input {
-    border-radius: 5px;
+    border-radius: var(--raio-campo);
     width: 100%;
-    padding: 16px 20px;
-    border-color: #DDD7F9;
     outline: none;
-    color: #DDD7F9;
     background-color: transparent;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-campo);
+    background-color: transparent;
+    font: inherit;
+    color: var(--cor-texto);
 }
 
 .dados ::placeholder {
-    color: #DDD7F9;
+    color: var(--cor-texto);
 }
 
 .dados label {
@@ -92,17 +126,29 @@ section {
     font-weight: 700;
 }
 
+.dados input:focus-visible
+{
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
+
 .botao{
     margin: 40px auto 15px auto;
-    border-radius: 5px;
+    border-radius: var(--raio-campo);
     max-width: 250px;
     width: 100%;
-    padding: 10px 16px;
     border: none;
     text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: 600;
     color: var(--cor-branco);
     cursor: pointer;
-    background-color: #4AB1DF;
+    background-color: var(--cor-destaque);
+    min-height: 52px;
+    padding: 12px 24px;
+    font: inherit;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+}
+
+.botao:hover {
+    filter: brightness(1.1);
 }
