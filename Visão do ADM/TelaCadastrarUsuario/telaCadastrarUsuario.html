@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário - MusicHub</title>
+    <link rel="shortcut icon" href="../../Imagens/" type="image/x-icon">
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="telaCadastrarUsuario.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+
+        <a href="" class="Gerenciar-Usuarios">Gerenciar Usuários</a>
+
+
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+    <main class="conteudo-principal">
+
+        <div class="titulo">
+            <a href="#"><img src="../../Imagens/Icone_seta_esquerda.svg" alt=""></a>
+            <h1>Adicionar Artista(s)</h1>
+        </div>
+        <div class="foto-perfil">
+            <img id="visualizacao-foto" src="../../Imagens/capa album - acdc.svg" alt="Foto de perfil"
+                class="foto-avatar">
+            <label for="foto-input" class="botao-editar" title="Alterar foto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                </svg>
+            </label>
+            <input type="file" id="foto-input" accept="image/*">
+        </div>
+        <div class="campo">
+            <label for="nome" class="dados-usuario">Nome de Usuário</label>
+            <input type="text" id="nome" placeholder="Insira seu nome">
+        </div>
+        <div class="campo">
+            <label for="email" class="dados-usuario">E-mail</label>
+            <input type="email" id="email" placeholder="seunome@email.com">
+        </div>
+        <div class="campo">
+            <label for="celular" class="dados-usuario">Celular</label>
+            <input type="tel" id="celular" placeholder="(11) 9 9999-9999">
+        </div>
+    </main>
+</body>
+
+</html>
