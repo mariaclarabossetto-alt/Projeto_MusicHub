@@ -82,3 +82,27 @@ body {
     text-overflow: ellipsis;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .conteudo-principal {
+        padding: 20px 16px;
+        gap: 24px;
+    }
+
+    .podcast-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+    .titulo-secao {
+        font-size: 1.1rem;
+    }
+
+    .podcast-titulo {
+        font-size: 0.8rem;
+    }
+
+    .podcast-autor {
+        font-size: 0.7rem;
+    }
+}
