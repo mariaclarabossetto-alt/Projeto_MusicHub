@@ -113,14 +113,14 @@ body {
 
 .profile-container {
   width: 100%;
-  max-width: 550px;
+  max-width: 700px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  gap:20px; 
+  gap:60px; 
 }
 
 .formulario-usuario {
@@ -152,7 +152,7 @@ body {
   background: none;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-campo);
-  padding: 12px 16px;
+  padding: 20px 16px;
   color: var(--cor-texto);
   font-size: var(--fonte-pequena);
   outline: none;
@@ -172,7 +172,7 @@ body {
   font-size: var(--fonte-base);
   font-weight: var(--peso-negrito);
   text-decoration: underline;
-  padding: 12px;
+  padding: 20px 12px;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-botao);
 
@@ -225,7 +225,7 @@ body {
   background-color: var(--cor-destaque); 
   color: var(--cor-branco);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
   padding: 12px 15px;
   font-size: var(--fonte-pequena);
   font-weight: var(--peso-negrito);
@@ -236,7 +236,7 @@ body {
   background-color: red; 
   color: var(--cor-branco);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
   padding: 12px 15px;
   font-size: var(--fonte-pequena);
   font-weight: var(--peso-negrito);
