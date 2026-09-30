@@ -8,32 +8,25 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="shortcut icon" href="../../../Imagens/Logo_musichub.svg" type="image/x-icon">
     
 
 </head>
 
 <body>
     <header class="cabecalho">
-        <a class="cabecalho__inicio" href="../inicial-usuarios/index.html">
-            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
         </a>
-
         <form class="cabecalho__pesquisa" role="search">
             <label class="cabecalho__lupa" for="busca-site">
-                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+                <img src="../../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
             </label>
-
             <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
-
-            <button class="cabecalho__buscar" type="submit">
-                Buscar
-            </button>
         </form>
-
         <button class="cabecalho__filtros" type="button">
-            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+            <img src="../../../Imagens/Icone_filtro.svg" alt="Filtros">
         </button>
-
         <a class="cabecalho__perfil rodape__link" href="../Tela Login/index.html">LOGIN</a>
     </header>
     <main>
@@ -52,9 +45,11 @@
                         <p>Pink Floyd</p>
                     </article>
                     <article class="capas">
-                        <img src="../../assets/capas/backinblack.webp" alt="">
-                        <h3>Back in Black</h3>
+                        <a href="../Descrição Álbum/index.html">
+                        <img src="../../Imagens/capa_album-acdc.svg" alt="">
+                        <h3>Highway To ell</h3>
                         <p>AC/DC</p>
+                        </a>
                     </article>
                     <article class="capas">
                         <img src="../../assets/capas/bad.webp" alt="">
@@ -96,8 +91,10 @@
                         <h3>AC/DC</h3>
                     </article>
                     <article class="capas redondas">
-                        <img src="../../assets/logos-bandas/Aerosmith-Logo.png" alt="">
-                        <h3>Aerosmith</h3>
+                        <a href="../Tela Visão Artista Usuário/index.html">
+                        <img src="../../Imagens/Artista_urias.svg" alt="">
+                        <h3 class="link">Urias</h3>
+                        </a>
                     </article>
                     <article class="capas redondas">
                         <img src="../../assets/logos-bandas/Bon-Jovi-band-logo.png" alt="">
@@ -158,9 +155,11 @@
                         <p>E3S2 / 19-06-2026</p>
                     </article>
                     <article class="capas">
+                        <a href="../Descrição Podcast/index.html">
                         <img src="../../assets/podcasts/podpah.jpg" alt="">
                         <h3>PODPAH</h3>
                         <p>E8S20 / 15-06-2026</p>
+                        </a>
                     </article>
                     <article class="capas">
                         <img src="../../assets/podcasts/flowpodcast.jpg" alt="">

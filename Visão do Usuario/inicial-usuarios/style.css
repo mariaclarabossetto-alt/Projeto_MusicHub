@@ -21,6 +21,11 @@ main {
     grid-row: 1fr 1fr 1fr;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 .oculto {
     display: none;
 }

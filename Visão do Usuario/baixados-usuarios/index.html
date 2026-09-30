@@ -8,34 +8,103 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="shortcut icon" href="../../../Imagens/Logo_musichub.svg" type="image/x-icon">
 
 </head>
 
 <body>
-    <header class="cabecalho">
-        <a class="cabecalho__inicio" href="../inicial-usuarios/index.html">
-            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+   <header class="cabecalho">
+        <a class="cabecalho__inicio" href="#">
+            <img src="../../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
         </a>
-
         <form class="cabecalho__pesquisa" role="search">
             <label class="cabecalho__lupa" for="busca-site">
-                <img src="../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+                <img src="../../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
             </label>
-
             <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
-
-            <button class="cabecalho__buscar" type="submit">
-                Buscar
-            </button>
         </form>
-
         <button class="cabecalho__filtros" type="button">
-            <img src="../../Imagens/Icone_filtro.svg" alt="Filtros">
+            <img src="../../../Imagens/Icone_filtro.svg" alt="Filtros">
         </button>
-
         <a class="cabecalho__perfil rodape__link" href="../Tela Login/index.html">LOGIN</a>
     </header>
     <main>
+        <aside class="music-player-lateral" id="player">
+            <div class="icones-player">
+                <i class="fa-solid fa-angle-down clicavel" id="botao-minimizar"></i>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F5538ab98016314fd6d617ffb3d5d926b.1000x1000x1.png&f=1&nofb=1&ipt=46fe8cd169bba7584ffda0a6048237ec7b70d485cfcf71c64fba35294ac533b0"
+                alt="" class="capa-album">
+            <div class="sub-cover">
+                <div class="textos-player">
+                    <h2 style="font-size: 20px;">NOME MUSICA</h2>
+                    <h3 style="font-size: 10px;">NOME ARTISTA</h3>
+                </div>
+                <div class="icones-player">
+                    <i class="fa fa-download"></i>
+                    <i class="fa fa-circle-plus"></i>
+                </div>
+            </div>
+            <input type="range">
+            <div class="controles-player">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="letras-player">
+                <p>
+                    Living easy, lovin' free <br>
+                    Season ticket on a one way ride <br>
+                    Asking nothing, leave me be <br>
+                    Taking everythin' in my stride <br>
+                    Don't need reason, don't need rhyme <br>
+                    Ain't nothing I'd rather do <br>
+                    Goin' down, party time <br>
+                    My friends are gonna be there too, yeah <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+
+                    No stop signs, speed limit <br>
+                    Nobody's gonna slow me down <br>
+                    Like a wheel, gonna spin it <br>
+                    Nobody's gonna mess me around <br>
+                    Hey Satan, payin' my dues <br>
+                    Playing in a rocking band <br>
+                    Hey mama, look at me <br>
+                    I'm on the way to the promised land <br>
+                    Woo! <br>
+
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    Highway to hell <br>
+
+                    Don't stop me <br>
+                    Heh, heh! <br>
+
+                    I'm on the highway to hell <br>
+                    On the highway to hell <br>
+                    Highway to hell <br>
+                    I'm on the highway to hell <br>
+                    (Highway to hell) I'm on the highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) Highway to hell <br>
+                    (Highway to hell) <br>
+
+                    And I'm going down <br>
+                    All the way <br>
+                    I'm on the highway to hell <br>
+                </p>
+            </div>
+        </aside>
         <section class="primario">
             <section class="secundario-albuns gap">
                 <h2>Albuns baixados localmente</h2>
