@@ -30,6 +30,7 @@ main {
     right: 0;
     background-color: var(--cor-barra);
     padding: 10px;
+    margin-right: 20px;
     color: var(--cor-texto);
     transform: translateY(+11vh);
     border-radius: 100px;
@@ -40,24 +41,26 @@ main {
 }
 
 .primario {
-    grid-column: 1/2;
-
-    padding: 40px;
     color: var(--cor-texto);
-
-    grid-row: 1/5;
+    z-index: 1;
 
     overflow-x: scroll;
 }
 
 .caroussel {
     text-align: center;
-    margin: 20px 0;
     display: flex;
     gap: 30px;
 
-    overflow: scroll;
+    overflow-x: scroll;
 }
+
+.secundario-albuns,
+.secundario-artistas,
+.secundario-podcasts {
+    padding: 40px;
+}
+
 
 .caroussel-musicas {
     grid-row: 1/2;
@@ -65,17 +68,26 @@ main {
 
 .caroussel::-webkit-scrollbar {
     height: 6px;
-
+    opacity: 0;
 }
 
-.caroussel::-webkit-scrollbar-track {
+.caroussel:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.caroussel:hover::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.caroussel::-webkit-scrollbar-thumb {
+.caroussel:hover::-webkit-scrollbar-thumb {
     background: var(--cor-texto);
     border-radius: 10px;
 }
+
+.carousse:hover::-webkit-scrollbar-corner {
+    display: none;
+}
+
 
 .caroussel-artistas {
     grid-row: 2/3;
@@ -136,51 +148,17 @@ main {
     border-radius: 5px;
 }
 
-.music-player-lateral .sub-cover {
-    margin: 10px 0;
-
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.music-player-lateral input {
+    width: 100%;
+    accent-color: var(--cor-texto);
 }
 
-.music-player-lateral .sub-cover .textos-player {
-    display: flex;
-    flex-direction: column;
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--cor-texto);
+    height: 0.67em;
+    border-radius: 67px;
 }
 
-.music-player-lateral .sub-cover .icones-player {
-    font-size: 20px;
-
-    display: flex;
-    gap: 5px;
-}
-
-.music-player-lateral .controles-player {
-    margin-top: 20px;
-    font-size: 30px;
-
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.music-player-lateral .letras-player {
-    background-color: var(--cor-texto);
-    color: var(--cor-fundo);
-    border-radius: 20px;
-
-    margin: 15px 0;
-    padding: 10px;
-
-
-    min-height: 10%;
-    max-height: 50%;
-    height: auto;
-    overflow: scroll;
-}
-
-.music-player-lateral .letras-player p {
-    height: auto;
-    max-height: 500px;
+input[type="range"]::-moz-range-track {
+    background: var(--cor-texto);
 }
