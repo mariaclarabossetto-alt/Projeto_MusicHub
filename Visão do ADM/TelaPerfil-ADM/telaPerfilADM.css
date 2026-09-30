@@ -57,16 +57,15 @@ body {
 .conteudo-principal {  
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 /* Foto de perfil */
 .foto-perfil {
   position: relative;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
+  width: 25%;
+  height: 25%;
 }
 
 .foto-avatar {
@@ -86,7 +85,7 @@ body {
   color: var(--cor-branco);
 
   padding: 8px;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
 
   cursor: pointer;
 
@@ -112,8 +111,8 @@ body {
 /* Campo de formulário de informações */
 
 .profile-container {
-  width: 100%;
-  max-width: 700px;
+  width: 40%;
+  /* max-width: 700px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -150,11 +149,13 @@ body {
 
 .campo input {
   background: none;
+  height: 60px;
+  width: 100%;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-campo);
-  padding: 20px 16px;
+  padding: 12px 16px;
   color: var(--cor-texto);
-  font-size: var(--fonte-pequena);
+  font-size: var(--fonte-base);
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -166,13 +167,13 @@ body {
 
 .btn-senha {
   background: none;
-
+  height: 60px;
   margin-top: auto;
   color: var(--cor-destaque);
   font-size: var(--fonte-base);
   font-weight: var(--peso-negrito);
   text-decoration: underline;
-  padding: 20px 12px;
+  padding: 12px 16px;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-botao);
 
