@@ -5,7 +5,7 @@ body {
 main {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 300px;
     grid-template-rows: 1fr 1fr 1fr;
 
 }
@@ -70,4 +70,52 @@ main {
     width: 170px;
 
     border-radius: 5px;
+}
+
+.music-player-lateral {
+
+    grid-column: 2/3;
+
+    grid-row: 1/5;
+
+    height: auto;
+    width: auto;
+
+    padding: 20px 40px;
+    margin: 10px 0;
+
+    color: var(--cor-texto);
+    background-color: var(--cor-barra);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.music-player-lateral .icones-player {
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-player-lateral img {
+    height: auto;
+    width: 220px;
+
+    border-radius: 5px;
+}
+
+.music-player-lateral input {
+    width: 100%;
+    accent-color: var(--cor-texto);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--cor-texto);
+    height: 0.67em;
+    border-radius: 67px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: var(--cor-texto);
 }
