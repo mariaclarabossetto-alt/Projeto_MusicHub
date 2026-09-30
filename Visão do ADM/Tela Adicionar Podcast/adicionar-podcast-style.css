@@ -2,9 +2,9 @@
 
 .pagina-podcast {
     width: 100%;
-    max-width: 1248px;
+    max-width: 1700px;
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 30px 30px;
 }
 
 .pagina-podcast__titulo {
@@ -56,7 +56,7 @@
 .formulario-podcast {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
 }
 
 .formulario-podcast .campo textarea {
@@ -68,8 +68,15 @@
     font-size: var(--fonte-pequena);
 }
 
+.capa-podcast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 46px 0 0;
+}
+
 .capa-podcast__titulo {
-    margin-bottom: 55px;
+    margin-bottom: 10px;
     font-size: var(--fonte-subtitulo);
     font-weight: var(--peso-negrito);
 }
@@ -126,9 +133,9 @@
 
 .formulario-podcast__topo {
     display: grid;
-    grid-template-columns: minmax(0, 500px) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 670px) minmax(0, 1fr);
     align-items: start;
-    gap: 64px;
+    gap: 150px;
 }
 
 .formulario-podcast__dados {
@@ -208,8 +215,7 @@
 .formulario-podcast__inferior {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 64px;
-    margin-top: 32px;
+    margin-top: 40px;
 }
 
 .formulario-podcast__coluna {
@@ -342,7 +348,7 @@
 @media (min-width: 801px) {
     .formulario-podcast__inferior {
         grid-template-rows: 130px;
-        column-gap: 64px;
+        column-gap: 150px;
         row-gap: 16px;
     }
 

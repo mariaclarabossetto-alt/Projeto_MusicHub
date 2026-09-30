@@ -63,19 +63,38 @@ main {
     grid-row: 1/2;
 }
 
-.caroussel::-webkit-scrollbar {
-    height: 6px;
-    display: none;
-
+.gap {
+    padding: 40px;
 }
 
-.caroussel::-webkit-scrollbar-track {
+.caroussel {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+
+    overflow-x: scroll;
+}
+
+.caroussel::-webkit-scrollbar {
+    height: 6px;
+    opacity: 0;
+}
+
+.caroussel:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.caroussel:hover::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.caroussel::-webkit-scrollbar-thumb {
+.caroussel:hover::-webkit-scrollbar-thumb {
     background: var(--cor-texto);
     border-radius: 10px;
+}
+
+.carousse:hover::-webkit-scrollbar-corner {
+    display: none;
 }
 
 .caroussel-artistas {
