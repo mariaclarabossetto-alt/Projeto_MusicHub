@@ -30,6 +30,7 @@ main {
     right: 0;
     background-color: var(--cor-barra);
     padding: 10px;
+    margin-right: 20px;
     color: var(--cor-texto);
     transform: translateY(+11vh);
     border-radius: 100px;
