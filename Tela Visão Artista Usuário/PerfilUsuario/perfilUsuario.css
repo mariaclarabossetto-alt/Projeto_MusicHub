@@ -3,14 +3,17 @@ body {
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: 0 95px;
 }
 
+
+
 .logo-container{
- height: 60px; /* Ou qualquer valor desejado */
-  width: auto;  /* Permite que o container se ajuste à proporção */
+ height: 60px; 
+  width: auto;  
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .logo-container img {
@@ -22,8 +25,12 @@ body {
 }
 
 
+
+/* Mexendo na idsposição da página */
+
 .conteudo-principal {  
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -31,9 +38,8 @@ body {
 /* Foto de perfil */
 .foto-perfil {
   position: relative;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
+  width: 25%;
+  height: 25%;
 }
 
 .foto-avatar {
@@ -50,10 +56,10 @@ body {
   right: 4px;
 
   background-color: var(--cor-barra);
-  color: #ffffff;
+  color: var(--cor-branco);
 
   padding: 8px;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
 
   cursor: pointer;
 
@@ -61,7 +67,6 @@ body {
   align-items: center;
   justify-content: center;
 
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
   box-shadow: var(--sombra-suave);
 
   transition: background-color 0.2s ease;
@@ -80,15 +85,15 @@ body {
 /* Campo de formulário de informações */
 
 .profile-container {
-  width: 100%;
-  max-width: 550px;
+  width: 40%;
+  /* max-width: 700px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  gap:30px; 
+  gap:60px; 
 }
 
 .formulario-usuario {
@@ -118,11 +123,13 @@ body {
 
 .campo input {
   background: none;
+  height: 60px;
+  width: 100%;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-campo);
   padding: 12px 16px;
   color: var(--cor-texto);
-  font-size: var(--fonte-pequena);
+  font-size: var(--fonte-base);
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -134,13 +141,13 @@ body {
 
 .btn-senha {
   background: none;
-
+  height: 60px;
   margin-top: auto;
   color: var(--cor-destaque);
   font-size: var(--fonte-base);
   font-weight: var(--peso-negrito);
   text-decoration: underline;
-  padding: 12px;
+  padding: 12px 16px;
   border: 1.5px solid var(--cor-borda);
   border-radius: var(--raio-botao);
 
@@ -193,7 +200,7 @@ body {
   background-color: var(--cor-destaque); 
   color: var(--cor-branco);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
   padding: 12px 15px;
   font-size: var(--fonte-pequena);
   font-weight: var(--peso-negrito);
@@ -204,7 +211,7 @@ body {
   background-color: red; 
   color: var(--cor-branco);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--raio-botao);
   padding: 12px 15px;
   font-size: var(--fonte-pequena);
   font-weight: var(--peso-negrito);
@@ -214,11 +221,6 @@ body {
 
 
 
-
-.finalizar-acao {
-  display: flex;
-  gap: 20px;
-}
 
 
 
@@ -236,13 +238,15 @@ body {
 
 
 .btn-sair {
-  margin-top: 40px;
-  background-color: red; 
+  margin-top: 10px;
+  background-color: rgb(167, 1, 1); 
   color: var(--cor-branco);
   border: none;
   border-radius: var(--raio-botao);
-  padding: 12px 50px;
-  font-size: var(--fonte-base);
+  padding: 12px 20px;
+  font-size: var(--fonte-pequena);
   font-weight: var(--peso-negrito);
   cursor: pointer;
 }
+
+
