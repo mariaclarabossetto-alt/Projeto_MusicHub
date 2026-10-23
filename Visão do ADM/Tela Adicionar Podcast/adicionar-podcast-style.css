@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 46px 0 0;
+    padding: 0;
 }
 
 .capa-podcast__titulo {
@@ -133,7 +133,7 @@
 
 .formulario-podcast__topo {
     display: grid;
-    grid-template-columns: minmax(0, 670px) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
     gap: 150px;
 }
@@ -207,7 +207,7 @@
 
 .audio-podcast__titulo {
     margin-bottom: 8px;
-    font-size: var(--fonte-subtitulo);
+    font-size: var(--fonte-base);
     font-weight: var(--peso-negrito);
     color: var(--cor-texto);
 }
@@ -215,13 +215,14 @@
 .formulario-podcast__inferior {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 40px;
+    gap: 24px 150px;
+    margin-top: 32px;
 }
 
 .formulario-podcast__coluna {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     min-width: 0;
 }
 
@@ -229,6 +230,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
+    align-items: start;
 }
 
 .formulario-podcast__numeracao .campo {
@@ -347,20 +349,18 @@
 
 @media (min-width: 801px) {
     .formulario-podcast__inferior {
-        grid-template-rows: 130px;
+        grid-template-rows: auto;
         column-gap: 150px;
-        row-gap: 16px;
+        row-gap: 24px;
     }
 
     .formulario-podcast__coluna {
-        display: grid;
-        grid-row: span 2;
-        grid-template-rows: subgrid;
-        gap: 16px;
-        align-items: start;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
     .formulario-podcast__dados {
-        padding-top: calc(var(--fonte-subtitulo) * var(--altura-linha) + 16px);
+        padding-top: 0;
     }
 }

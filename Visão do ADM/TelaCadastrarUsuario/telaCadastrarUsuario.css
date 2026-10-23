@@ -1,0 +1,104 @@
+/* Alterações no header para esta página */
+.Gerenciar-Usuarios {
+    font: inherit;
+    font-size: var(--fonte-subtitulo);
+    font-weight: var(--peso-negrito);
+    color: var(--cor-texto);
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+    padding: 2px 4px;
+    text-transform: uppercase;
+    border-radius: var(--raio-campo);
+}
+
+.Gerenciar-Usuarios::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: var(--cor-destaque);
+}
+
+
+
+
+
+
+
+
+/* Foto de perfil */
+.foto-perfil {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+
+.foto-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.botao-editar {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+
+  background-color: var(--cor-barra);
+  color: var(--cor-branco);
+
+  padding: 8px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: var(--sombra-suave);
+
+  transition: background-color 0.2s ease;
+}
+
+.botao-editar:hover {
+  background-color: #A861EA;
+}
+
+#foto-input {
+  display: none;
+}
+
+
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-size: var(--fonte-base);
+  font-weight: var(--peso-negrito);
+  margin-bottom: 8px;
+  color: var(--cor-texto);
+}
+
+.campo input {
+  background: none;
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio-campo);
+  padding: 12px 16px;
+  color: var(--cor-texto);
+  font-size: var(--fonte-pequena);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.campo input:focus {
+  border-color: var(--cor-destaque);
+}
