@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Episódio | MusicHub</title>
+    <link rel="stylesheet" href="../../Global/global-style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../../Imagens/Logo_musichub.svg">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__inicio" href="../TelaInicialAdm/PáginaInicial/PáginaInicial.html">
+            <img src="../../Imagens/Icone_casa_inicio.svg" alt="Pagina inicial">
+        </a>
+        <form class="cabecalho__pesquisa" role="search">
+            <label class="cabecalho__lupa" for="busca-site">
+                <img src="../../../Imagens/Icone_lupa_busca.svg" alt="Pesquisar no MusicHub">
+            </label>
+            <input id="busca-site" type="search" name="busca" placeholder="Algo em específico hoje?">
+        </form>
+        <button class="cabecalho__filtros" type="button">
+            <img src="../../../Imagens/Icone_filtro.svg" alt="Filtros">
+        </button>
+        <span class="cabecalho__perfil">Administrador</span>
+    </header>
+    <main class="pagina-podcast">
+        <div class="pagina-podcast__cabecalho">
+            <a class="pagina-podcast__voltar" href="../TelaInicialAdm/Podcasts/Podcasts.html"
+                aria-label="Voltar para a lista de podcasts">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="m14 5-7 7 7 7" />
+                </svg>
+            </a>
+            <h1 class="pagina-podcast__titulo">Adicionar Episódio</h1>
+        </div>
+        <form class="formulario-podcast">
+            <div class="formulario-podcast__topo">
+                <div class="capa-podcast">
+                    <p class="capa-podcast__titulo">Capa do Episódio
+                    </p>
+                    <div class="capa-podcast__seletor">
+                        <input type="file" class="capa-podcast__arquivo" id="capa-podcast" name="capa" accept="image/*"
+                            aria-describedby="ajuda-capa">
+                        <label for="capa-podcast" class="capa-podcast__area">
+                            <img src="../../Imagens/Icone_adic_imagem.svg" alt="">
+                            <span class="capa-podcast__chamada">Adicionar imagem</span>
+                            <span id="ajuda-capa" class="ajuda-capa">Clique para selecionar a foto do seu episódio</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="formulario-podcast__dados">
+                    <div class="campo">
+                        <label for="nome-podcast">Título</label>
+                        <input type="text" id="nome-podcast" name="nome" placeholder="Adicione o título do seu episódio"
+                            required>
+                    </div>
+                    <div class="campo">
+                        <label for="descricao-podcast">Descrição:</label>
+                        <textarea name="descricao" id="descricao-podcast" aria-describedby="ajuda-descricao"
+                            placeholder="Adicione uma descrição para seu episódio." rows="4" maxlength="70"></textarea>
+                        <small class="campo__ajuda" id="ajuda-descricao">Máximo de 70 caracteres</small>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario-podcast__inferior">
+                <div class="formulario-podcast__coluna">
+                    <div class="audio-podcast">
+                        <p class="audio-podcast__titulo">Áudio:</p>
+                        <div class="audio-podcast__seletor">
+                            <input type="file" class="audio-podcast__arquivo" id="audio-podcast" name="audio"
+                                accept="audio/*" aria-describedby="ajuda-audio">
+                            <label for="audio-podcast" class="audio-podcast__area">
+                                <img src="../../Imagens/Icone_adic_audio_microfone.svg" alt="">
+                                <span class="audio-podcast__textos">
+                                    <span class="audio-podcast__chamada">Adicionar áudio</span>
+                                    <span id="ajuda-audio">Clique para adicionar o áudio do seu episódio.</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="categoria-podcast">Categoria:</label>
+                        <input type="text" id="categoria-podcast" name="Categoria" placeholder="Qual é a categori do seu episódio?"
+                        required>
+                    </div>
+                </div>
+                <div class="formulario-podcast__coluna">
+                    <div class="campo">
+                        <label for="convidado-podcast">Convidado (Opcional):</label>
+                        <input id="convidado-podcast" name="convidado" type="text"
+                            placeholder="Nome do convidado">
+                    </div>
+                </div>
+            </div>
+            <div class="formulario-podcast__acoes">
+                <button type="reset" class="botao-podcast botao-podcast--descartar">
+                    Descartar
+                </button>
+                <button type="submit" class="botao-podcast botao-podcast--salvar">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <nav class="rodape__navegacao" aria-label="Navegação principal">
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__link" href="../TelaInicialAdm/Albuns/Albuns.html">Álbuns</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="../TelaInicialAdm/Artistas/Artistas.html">Artistas</a>
+                </li>
+
+                <li>
+                    <a class="rodape__link" href="../TelaInicialAdm/Podcasts/Podcasts.html">Podcasts</a>
+                </li>
+
+
+                <li>
+                    <details class="rodape__cadastros">
+                        <summary class="rodape__acionador" aria-label="Opções de cadastro">
+                            <span aria-hidden="true">+</span>
+                        </summary>
+
+                        <div class="rodape__painel">
+                            <ul class="rodape__opcoes">
+                                <li>
+                                    <a href="../Tela Add Artistas/index.html">Adicionar Artista</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Musica/adicionar-musica.html">Adicionar Música</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Album/adicionar-album.html">Adicionar Álbum</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Tela Adicionar Podcast/adicionar-podcast.html">Adicionar Podcast</a>
+                                </li>
+
+                                <li>
+                                    <a href="../TelaPerfil-ADM/telaPerfilADM.html">Adicionar Usuário</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+
+            </ul>
+
+            <a class="rodape__perfil" href="../TelaPerfil-ADM/telaPerfilADM.html" aria-label="Meu perfil">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="4"
+                        d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14M6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8" />
+
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
