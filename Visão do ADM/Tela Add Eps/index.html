@@ -39,64 +39,66 @@
             <h1 class="pagina-podcast__titulo">Adicionar Episódio</h1>
         </div>
         <form class="formulario-podcast">
-            <div class="formulario-podcast__topo">
-                <div class="capa-podcast">
-                    <p class="capa-podcast__titulo">Capa do Episódio
-                    </p>
-                    <div class="capa-podcast__seletor">
+            <section class="form ">
+
+                <div class="formulario-podcast__topo">
+                    <div class="capa-podcast">
+                        <p class="capa-podcast__titulo">Capa do Episódio
+                        </p>
+                        <div class="capa-podcast__seletor">
                         <input type="file" class="capa-podcast__arquivo" id="capa-podcast" name="capa" accept="image/*"
                             aria-describedby="ajuda-capa">
                         <label for="capa-podcast" class="capa-podcast__area">
                             <img src="../../Imagens/Icone_adic_imagem.svg" alt="">
                             <span class="capa-podcast__chamada">Adicionar imagem</span>
-                            <span id="ajuda-capa" class="ajuda-capa">Clique para selecionar a foto do seu episódio</span>
+                            <span id="ajuda-capa" class="ajuda-capa">Clique para selecionar a foto do seu
+                                episódio</span>
                         </label>
                     </div>
                 </div>
-                <div class="formulario-podcast__dados">
-                    <div class="campo">
-                        <label for="nome-podcast">Título</label>
-                        <input type="text" id="nome-podcast" name="nome" placeholder="Adicione o título do seu episódio"
-                            required>
-                    </div>
-                    <div class="campo">
-                        <label for="descricao-podcast">Descrição:</label>
-                        <textarea name="descricao" id="descricao-podcast" aria-describedby="ajuda-descricao"
-                            placeholder="Adicione uma descrição para seu episódio." rows="4" maxlength="70"></textarea>
-                        <small class="campo__ajuda" id="ajuda-descricao">Máximo de 70 caracteres</small>
+                <div class="audio-podcast">
+                    <p class="audio-podcast__titulo">Áudio:</p>
+                    <div class="audio-podcast__seletor">
+                        <input type="file" class="audio-podcast__arquivo" id="audio-podcast" name="audio"
+                        accept="audio/*" aria-describedby="ajuda-audio">
+                        <label for="audio-podcast" class="audio-podcast__area">
+                            <img src="../../Imagens/Icone_adic_audio_microfone.svg" alt="">
+                            <span class="audio-podcast__textos">
+                                <span class="audio-podcast__chamada">Adicionar áudio</span>
+                                <span id="ajuda-audio">Clique para adicionar o áudio do seu episódio.</span>
+                            </span>
+                        </label>
                     </div>
                 </div>
             </div>
-            <div class="formulario-podcast__inferior">
+
+            <div class="formulario-podcast__dados">
+                <div class="campo">
+                    <label for="nome-podcast">Título</label>
+                    <input type="text" id="nome-podcast" name="nome" placeholder="Adicione o título do seu episódio"
+                        required>
+                </div>
+                <div class="campo">
+                    <label for="descricao-podcast">Descrição:</label>
+                    <textarea name="descricao" id="descricao-podcast" aria-describedby="ajuda-descricao"
+                        placeholder="Adicione uma descrição para seu episódio." rows="4" maxlength="70"></textarea>
+                    <small class="campo__ajuda" id="ajuda-descricao">Máximo de 70 caracteres</small>
+                </div>
                 <div class="formulario-podcast__coluna">
-                    <div class="audio-podcast">
-                        <p class="audio-podcast__titulo">Áudio:</p>
-                        <div class="audio-podcast__seletor">
-                            <input type="file" class="audio-podcast__arquivo" id="audio-podcast" name="audio"
-                                accept="audio/*" aria-describedby="ajuda-audio">
-                            <label for="audio-podcast" class="audio-podcast__area">
-                                <img src="../../Imagens/Icone_adic_audio_microfone.svg" alt="">
-                                <span class="audio-podcast__textos">
-                                    <span class="audio-podcast__chamada">Adicionar áudio</span>
-                                    <span id="ajuda-audio">Clique para adicionar o áudio do seu episódio.</span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
                     <div class="campo">
                         <label for="categoria-podcast">Categoria:</label>
-                        <input type="text" id="categoria-podcast" name="Categoria" placeholder="Qual é a categori do seu episódio?"
-                        required>
+                        <input type="text" id="categoria-podcast" name="Categoria"
+                        placeholder="Qual é a categori do seu episódio?" required>
                     </div>
                 </div>
                 <div class="formulario-podcast__coluna">
                     <div class="campo">
                         <label for="convidado-podcast">Convidado (Opcional):</label>
-                        <input id="convidado-podcast" name="convidado" type="text"
-                            placeholder="Nome do convidado">
+                        <input id="convidado-podcast" name="convidado" type="text" placeholder="Nome do convidado">
                     </div>
                 </div>
             </div>
+        </section>
             <div class="formulario-podcast__acoes">
                 <button type="reset" class="botao-podcast botao-podcast--descartar">
                     Descartar
